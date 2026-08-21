@@ -1,0 +1,16 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "BayBoard",
+  "colors": {
+    "primary": "#E87722"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Help",
+        "pages": ["index", "changelog"]
+      }
+    ]
+  }
+}
