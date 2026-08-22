@@ -8,7 +8,6 @@ Shop-staff help for [BayBoard](https://bayboard.io), the schedule board for auto
 - `*.mdx`: one page per task, grouped by folder (`schedule-board/`, `reports/`, and so on).
 - `images/`: screenshots from the live app.
 - `logo/`, `favicon.png`, `style.css`: brand assets and overrides.
-- `PAGE-PLAN.md`: internal page inventory and decisions. Not published.
 
 ## Working on the docs
 
