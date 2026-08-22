@@ -34,9 +34,9 @@ Each card shows the customer, vehicle, description, hours, a job-type chip, and 
 - **"For [tech]" tag.** The job was saved with a technician but no start time. It is meant for that tech but not yet placed. Auto-Schedule prefers that tech for the job.
 - **Warning triangle.** The promised time has passed and the job is not Completed. See [Promised time](/schedule-board/promised-time).
 
-## Carried-forward banner
+## Bumped banner
 
-A job that Carry Forward could not re-place shows an amber banner: "CARRIED FORWARD AFTER THE PRIOR DAY RAN OUT OF TECHNICIAN CAPACITY." with the label "Bumped, needs scheduling". Drag it onto the board or run Auto-Schedule to place it. See [Carry Forward and Reset Day](/schedule-board/carry-forward-and-reset-day).
+A job that was pushed off the board shows a banner in capitals across the top of the card. The text starts with "Bumped" and says why: Carry Forward could not re-place it, or a technician's new time off covered its slot (for example "Bumped, Bob R. off"). Drag it onto the board or run Auto-Schedule to place it. See [Carry Forward and Reset Day](/schedule-board/carry-forward-and-reset-day) and [Time off](/time-off).
 
 ## Collapse the panel
 
@@ -54,5 +54,3 @@ On a past day the header shows a "Past days are read-only." chip. You cannot dra
 
 - [Assign a job](/schedule-board/assign-a-job)
 - [Job statuses](/schedule-board/job-statuses)
-
-{/* ASK DANIEL: The app's bump label is "Bumped — needs scheduling" with an em dash. The style rules ban dashes, so this page quotes it as "Bumped, needs scheduling". Keep the paraphrase, or quote the app exactly? */}

@@ -52,11 +52,11 @@ A job that stays in Unassigned gets an amber chip that reads "Didn't fit:" follo
 
 | Reason | What it means | What to do |
 | --- | --- | --- |
-| the shop is closed | The day you are viewing is a closed day. | Move to an open day and run again. |
+| the shop is closed | The day you are viewing is a closed day, so nothing was placed. | Move to an open day and run again. |
 | waiting on parts, no ETA | The job is Waiting on Parts with no Parts ETA date. | Open the job, set the Parts ETA date, and run again on or after that day. |
 | parts due [date] | The Parts ETA is later than the day you are viewing. | Run again on or after the ETA date. |
-| no qualified tech | No technician passed the skill match for this job type. | Check the avoid lists in the [tech capability profile](/team-and-roles/tech-capability-profile), or tag the job "For" a technician and run again. |
-| no open capacity | No eligible technician has an open block long enough before closing. | Free up time, shorten the Est. Hours, or try another day. |
+| no qualified tech | Every technician has this job type on their AVOID (IF POSSIBLE) list. | Adjust the avoid lists in the [tech capability profile](/team-and-roles/tech-capability-profile), or pick a Technician for the job without a start time so it is tagged "For" that tech. A "For" tag overrides the avoid list. |
+| no open capacity | A qualified technician exists, but no open block fits the job before closing. | Free up time, shorten the Est. Hours, or try another day. |
 
 Service Advisors see "no open capacity" in place of "no qualified tech". The chip clears when the job is edited or the next run happens.
 
@@ -77,5 +77,3 @@ Auto-Schedule is deterministic. If you undo and run again on the same list witho
 - [Scheduling preferences](/auto-scheduler/scheduling-preferences)
 - [Carry Forward and Reset Day](/schedule-board/carry-forward-and-reset-day)
 - [Unassigned jobs](/schedule-board/unassigned-jobs)
-
-{/* ASK DANIEL: the "What it means" and "What to do" columns for the Didn't fit reasons are my reading of the hard constraints. Confirm the exact trigger for each reason, especially "the shop is closed" (closed day vs no open hours left) and whether "For {tech}" tagging overrides the avoid list as the board inventory says. */}

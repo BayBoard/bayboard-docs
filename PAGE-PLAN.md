@@ -100,14 +100,15 @@ Not captured (left as TODO comments in the pages): onboarding wizard steps (alre
 - Request access / early-access lead form (not an account flow).
 - Legal link (external to bayboard.io/legal).
 
-## Ask Daniel
+## Decisions (answered by Daniel, Aug 22, 2026)
 
-1. Settings > Billing on `dev` has a live **Cancel Subscription** link with a typed CANCEL confirm. The brief says no in-app Cancel. It is left out of the Billing page. Confirm it should stay undocumented, or whether it is being removed.
-2. Settings > Time Off tab is visible only to Service Advisor and Foreman. Owner / Admin and General Manager add time off inside Settings > Team. Documented that way. Confirm that is intended, not a bug.
-3. The product uses three spellings: the button reads **Auto Schedule**, the confirm reads "Run Auto-Schedule?", and the progress panel and shortcut list say "Auto-Scheduler". Docs use "Auto-Schedule" for the feature and quote the button as **Auto Schedule**. Say if you want one spelling in the app.
-4. The Add Job drawer field "Scheduled Time" is the block length in hours, not a clock time. Docs explain it as block length. Consider relabeling in the app.
-5. Keyboard shortcuts list shows both Ctrl+S "Save changes" and Ctrl+Enter "Save & close", but the drawer has one **Save Changes** button and both shortcuts do the same save. Docs list both keys as the app shows them and say both save and close.
-6. The Documentation cards in the app open only when `NEXT_PUBLIC_DOCS_URL` is set in the deployment. Confirm it points at https://docs.bayboard.io in production.
-7. The in-app Invite User dialog says an invite "cannot be re-sent", but the invite detail has a **Resend Invite** button. Docs describe Resend Invite as it works. Consider fixing the dialog copy.
-8. Pages with TODO screenshot comments (onboarding, sign in, accept invite, My hours, drop preview) need a capture from a session that can reach them.
-9. Support email failsafe is support@bayboard.io in the app. The `/shop-unavailable` page uses hello@bayboard.io. Docs mention only support@bayboard.io.
+1. **Cancel Subscription** link on `dev`: stays out of the docs. Subscription management moves to the Stripe Customer Portal in a later session; the Billing page gets updated then. Follow-up card: BayBoard/bayboard-app issue 558.
+2. **Time Off tab** only for Service Advisor and Foreman, with Owner / Admin and General Manager using the Settings > Team panel: intended. Docs stay as written.
+3. **Spelling**: docs use "Auto-Schedule" for the feature and quote the button as **Auto Schedule**.
+4. **Scheduled Time** (block length in hours): docs explain it; no app relabel.
+5. **Save shortcuts**: docs list both Ctrl+S and Ctrl+Enter as the app shows them and say both save and close.
+6. **In-app Documentation cards**: `NEXT_PUBLIC_DOCS_URL` is not set yet. The Docs panel will be updated and linked to docs.bayboard.io in a later session. Until then the cards show "Documentation is not available yet." Docs wording is unchanged.
+7. **Resend Invite**: invites can be resent. Docs describe Resend Invite as it works; the dialog sentence "cannot be re-sent" is stale app copy.
+8. **TODO screenshots** (onboarding, sign in, accept invite, My hours, drop preview) stay as TODO comments until a session with the right user type is available.
+9. In-page writer questions were resolved from the app code on Aug 22, 2026: archiving a technician needs **Save Changes** after the confirm; "Didn't fit" reasons and the "For" tag overriding avoid lists; Scoreboard tile definitions (Capacity used has no View Jobs button); My hours weekly goal is the roster daily goal over open days minus time off (On-time rate has no View Jobs button); Carry Forward and Reset Day have no Undo; bump banners start with "Bumped" (the app copy uses an em dash, so docs describe the banner instead of quoting it).
+10. Support email failsafe is support@bayboard.io in the app. The `/shop-unavailable` page uses hello@bayboard.io. Docs mention only support@bayboard.io.
