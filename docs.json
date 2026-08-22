@@ -3,7 +3,75 @@
   "theme": "mint",
   "name": "BayBoard",
   "colors": {
-    "primary": "#E87722"
+    "primary": "#1E3A5F",
+    "light": "#3669AC",
+    "dark": "#B45309"
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/light.png",
+    "href": "https://bayboard.io"
+  },
+  "favicon": "/favicon.png",
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "background": {
+    "color": {
+      "light": "#F8F9FA",
+      "dark": "#122238"
+    }
+  },
+  "fonts": {
+    "family": "Inter",
+    "heading": {
+      "family": "Plus Jakarta Sans",
+      "weight": 700
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "navbar": {
+    "links": [
+      { "label": "bayboard.io", "href": "https://bayboard.io" }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open BayBoard",
+      "href": "https://app.bayboard.io"
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "BayBoard",
+        "items": [
+          { "label": "bayboard.io", "href": "https://bayboard.io" },
+          { "label": "Open BayBoard", "href": "https://app.bayboard.io" },
+          { "label": "System status", "href": "https://status.bayboard.io" }
+        ]
+      },
+      {
+        "header": "Help",
+        "items": [
+          { "label": "Email hello@bayboard.io", "href": "mailto:hello@bayboard.io" },
+          { "label": "What's new", "href": "https://docs.bayboard.io/changelog" }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          { "label": "Privacy", "href": "https://bayboard.io/privacy" },
+          { "label": "Terms", "href": "https://bayboard.io/terms" },
+          { "label": "Legal", "href": "https://bayboard.io/legal" }
+        ]
+      }
+    ]
   },
   "navigation": {
     "groups": [
