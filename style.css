@@ -1,0 +1,71 @@
+/* BayBoard brand overrides for Mintlify. Values come from bayboard-landing DESIGN.md. */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* Mono for data: RO numbers, times, keys, code. */
+code,
+kbd,
+pre,
+pre code {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Headings in Oxford Navy; body copy in Prussian. */
+#content-area h1,
+#content-area h2,
+#content-area h3,
+#content-area h4 {
+  color: #1E3A5F;
+  letter-spacing: -0.01em;
+}
+
+#content-area p,
+#content-area li,
+#content-area td {
+  color: #122238;
+}
+
+/* Body links use ochre, the single hot color, like bayboard.io. */
+#content-area a:not(.card):not([class*="card"]) {
+  color: #B45309;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#content-area a:not(.card):not([class*="card"]):hover {
+  color: #92400E;
+}
+
+/* White navbar with the site's hairline border. */
+#navbar {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* Navy footer band, matching the landing page, with the white wordmark. */
+footer {
+  background: #1E3A5F;
+}
+
+footer img {
+  content: url("/logo/dark.png");
+}
+
+footer a,
+footer p,
+footer span,
+footer h4,
+footer div {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
+/* Structural frames: 1px Alabaster border, 8px radius, navy-tinted shadow. */
+#content-area .frame,
+#content-area [class*="Frame"],
+#content-area img {
+  border-radius: 8px;
+}

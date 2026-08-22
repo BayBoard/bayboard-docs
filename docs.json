@@ -2,14 +2,188 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "BayBoard",
+  "description": "Help for BayBoard, the schedule board for auto repair shops. Guides for owners, service advisors, foremen, and technicians.",
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "BayBoard help",
+      "twitter:card": "summary_large_image"
+    },
+    "organization": {
+      "name": "BayBoard",
+      "legalName": "BayBoard LLC",
+      "url": "https://bayboard.io"
+    }
+  },
+  "search": {
+    "prompt": "Search help..."
+  },
+  "metadata": {
+    "timestamp": true
+  },
   "colors": {
-    "primary": "#E87722"
+    "primary": "#1E3A5F",
+    "light": "#3669AC",
+    "dark": "#B45309"
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/light.png",
+    "href": "https://bayboard.io"
+  },
+  "favicon": "/favicon.png",
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "background": {
+    "color": {
+      "light": "#F8F9FA",
+      "dark": "#122238"
+    }
+  },
+  "fonts": {
+    "family": "Inter",
+    "heading": {
+      "family": "Plus Jakarta Sans",
+      "weight": 700
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "navbar": {
+    "links": [
+      { "label": "bayboard.io", "href": "https://bayboard.io" }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open BayBoard",
+      "href": "https://app.bayboard.io"
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "BayBoard",
+        "items": [
+          { "label": "bayboard.io", "href": "https://bayboard.io" },
+          { "label": "Open BayBoard", "href": "https://app.bayboard.io" },
+          { "label": "System status", "href": "https://status.bayboard.io" }
+        ]
+      },
+      {
+        "header": "Help",
+        "items": [
+          { "label": "hello@bayboard.io", "href": "mailto:hello@bayboard.io" },
+          { "label": "What's new", "href": "https://docs.bayboard.io/changelog" }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          { "label": "Privacy", "href": "https://bayboard.io/privacy" },
+          { "label": "Terms", "href": "https://bayboard.io/terms" },
+          { "label": "Legal", "href": "https://bayboard.io/legal" }
+        ]
+      }
+    ]
   },
   "navigation": {
     "groups": [
       {
-        "group": "Help",
-        "pages": ["index", "changelog"]
+        "group": "Home",
+        "pages": ["index"]
+      },
+      {
+        "group": "Getting started",
+        "pages": [
+          "getting-started",
+          "getting-started/set-up-your-shop",
+          "getting-started/sign-in",
+          "getting-started/find-your-way-around",
+          "getting-started/shop-profile-and-hours",
+          "getting-started/notifications",
+          "getting-started/my-profile"
+        ]
+      },
+      {
+        "group": "Schedule board",
+        "pages": [
+          "schedule-board",
+          "schedule-board/add-a-job",
+          "schedule-board/assign-a-job",
+          "schedule-board/move-or-resize-a-job",
+          "schedule-board/job-details",
+          "schedule-board/job-statuses",
+          "schedule-board/unassigned-jobs",
+          "schedule-board/promised-time",
+          "schedule-board/carry-forward-and-reset-day",
+          "schedule-board/search"
+        ]
+      },
+      {
+        "group": "Team and roles",
+        "pages": [
+          "team-and-roles",
+          "team-and-roles/add-a-technician",
+          "team-and-roles/tech-capability-profile",
+          "team-and-roles/archive-a-technician"
+        ]
+      },
+      {
+        "group": "Users and access",
+        "pages": [
+          "users-and-access",
+          "users-and-access/invite-a-user",
+          "users-and-access/accept-an-invite",
+          "users-and-access/change-a-role-or-deactivate"
+        ]
+      },
+      {
+        "group": "Auto-Scheduler",
+        "pages": [
+          "auto-scheduler",
+          "auto-scheduler/run-auto-schedule",
+          "auto-scheduler/scheduling-preferences"
+        ]
+      },
+      {
+        "group": "Time off",
+        "pages": [
+          "time-off",
+          "time-off/add-time-off",
+          "time-off/delete-time-off"
+        ]
+      },
+      {
+        "group": "Reports",
+        "pages": [
+          "reports",
+          "reports/today",
+          "reports/scoreboard",
+          "reports/my-hours",
+          "reports/export-and-print"
+        ]
+      },
+      {
+        "group": "Billing",
+        "pages": ["billing"]
+      },
+      {
+        "group": "Support",
+        "pages": [
+          "support/contact-support",
+          "support/keyboard-shortcuts",
+          "support/system-status"
+        ]
+      },
+      {
+        "group": "What's new",
+        "pages": ["changelog"]
       }
     ]
   }

@@ -1,0 +1,53 @@
+---
+title: Auto-Scheduler
+description: Let BayBoard place Unassigned jobs into open technician time.
+---
+
+Auto-Schedule places Unassigned jobs into open technician time on the day you are viewing. It never moves a job that is already on the board. Anything that does not fit stays in Unassigned.
+
+The feature is deterministic. The same Unassigned list always produces the same schedule, so a second run on the same list changes nothing.
+
+The top-bar button reads **Auto Schedule**. You can also press S on the board.
+
+## Who can run it
+
+| Role | Run Auto-Schedule | Change scheduling preferences |
+| --- | --- | --- |
+| Owner / Admin | Yes | Yes |
+| General Manager | Yes | Yes |
+| Service Advisor | Yes | No |
+| Foreman | No | No |
+| Technician | No | No |
+
+The button is hidden while billing is past due.
+
+## How it decides
+
+Auto-Schedule checks hard constraints first. A job is placed only where every one of these holds.
+
+- Skill match. The technician can do this job type. A technician's "avoid" list excludes them unless the job is tagged "For" that technician.
+- Parts received. A Waiting on Parts job places only when its parts ETA is today or earlier, and no earlier than the parts-ready hour.
+- Respect time off. No job lands in an all-day or partial-day time-off block.
+- No double-booking. Two jobs cannot share a slot on the same technician.
+- Fits before end of day. The block must end by that weekday's closing time.
+
+Jobs start on 30-minute marks inside shop hours.
+
+Soft preferences then decide which open slot wins. In the default order they are: Honor promised-by, Waiting customers first, Prefer the tagged technician, Best-qualified tech, Balance the board, Match pace to job, Earliest open slot. An Owner / Admin or General Manager can reorder or turn off any of them in Settings > Scheduling.
+
+## Learn more
+
+<CardGroup cols={2}>
+  <Card title="Run Auto-Schedule" href="/auto-scheduler/run-auto-schedule">
+    Run it, read the result, and undo if needed.
+  </Card>
+  <Card title="Scheduling preferences" href="/auto-scheduler/scheduling-preferences">
+    Set the hard constraints, parts-ready hour, and preference order.
+  </Card>
+  <Card title="Carry Forward and Reset Day" href="/schedule-board/carry-forward-and-reset-day">
+    The two other bulk actions next to the Auto Schedule button.
+  </Card>
+  <Card title="Tech capability profile" href="/team-and-roles/tech-capability-profile">
+    Skills, avoid list, and pace that Auto-Schedule reads for each technician.
+  </Card>
+</CardGroup>
