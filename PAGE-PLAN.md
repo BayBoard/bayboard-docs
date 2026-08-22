@@ -65,7 +65,7 @@ Real captures from dev.bayboard.io, PNG, cropped, under `/images/<group>/`. Page
 | `images/getting-started/navigation-rail.png` | Left rail: Schedule, Reports, Settings, Support, account menu |
 | `images/getting-started/settings-general.png` | Settings > General shop profile and Hours of Operation |
 | `images/getting-started/settings-notifications.png` | Settings > Notifications toggles |
-| `images/getting-started/settings-my-profile.png` | Settings > My Profile |
+| `images/getting-started/settings-my-profile.png` | Settings > My Profile, cropped to the Change Password panel so no email address is shown |
 | `images/schedule-board/board-overview.png` | Board grid with jobs, capacity chips, time column |
 | `images/schedule-board/add-new-job-drawer.png` | Job Details drawer in add mode |
 | `images/schedule-board/job-details.png` | Job Details modal |
@@ -82,12 +82,12 @@ Real captures from dev.bayboard.io, PNG, cropped, under `/images/<group>/`. Page
 | `images/time-off/time-off-management.png` | Time Off Management panel |
 | `images/reports/reports-today.png` | Reports > Today tiles |
 | `images/reports/reports-scoreboard.png` | Reports > Scoreboard |
-| `images/billing/settings-billing.png` | Settings > Billing current plan and Open Billing Portal |
+| `images/billing/settings-billing.png` | Settings > Billing, cropped to the Current plan and Payment method cards |
 | `images/support/contact-support-form.png` | Contact Support form |
 | `images/support/keyboard-shortcuts.png` | Keyboard Shortcuts screen |
 | `images/support/system-status.png` | System Status screen |
 
-Not capturable from the signed-in Owner session on dev (left as TODO comments): onboarding wizard steps (already completed for this shop), sign-in and password pages (would require signing out), invite acceptance page, My hours report (Foreman or Technician only), a mid-drag drop preview.
+Not captured (left as TODO comments in the pages): onboarding wizard steps (already completed for this shop), the sign-in page (the only capture had a real email address autofilled, so it was discarded), password reset pages, the invite acceptance page, the My hours report (Foreman or Technician only), and a mid-drag drop preview.
 
 ## Skipped on purpose (not documented)
 
