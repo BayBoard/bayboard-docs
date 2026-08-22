@@ -42,9 +42,13 @@ pre code {
   border-bottom: 1px solid #E6E6E6;
 }
 
-/* Navy footer band, matching the landing page. */
+/* Navy footer band, matching the landing page, with the white wordmark. */
 footer {
   background: #1E3A5F;
+}
+
+footer img {
+  content: url("/logo/dark.png");
 }
 
 footer a,

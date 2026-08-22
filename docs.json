@@ -59,7 +59,7 @@
       {
         "header": "Help",
         "items": [
-          { "label": "Email hello@bayboard.io", "href": "mailto:hello@bayboard.io" },
+          { "label": "hello@bayboard.io", "href": "mailto:hello@bayboard.io" },
           { "label": "What's new", "href": "https://docs.bayboard.io/changelog" }
         ]
       },
