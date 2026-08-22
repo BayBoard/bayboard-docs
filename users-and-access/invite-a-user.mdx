@@ -1,0 +1,61 @@
+---
+title: Invite a user
+description: Send a sign-in invite with a role and an optional roster link.
+---
+
+Accounts are created by invitation. Owner / Admin and General Manager send invites from Settings > Users. Foreman can open the Users tab but sees "View only. User access is visible from your role but cannot be changed."
+
+<Frame>
+  <img src="/images/users-and-access/invite-user-dialog.png" alt="Invite User dialog with full name, email, role, and link to roster tech fields" />
+</Frame>
+
+## Send the invite
+
+<Steps>
+  <Step title="Open Settings > Users">
+    Open Settings from the left rail and pick **Users**. The header shows "Users (n)".
+  </Step>
+  <Step title="Click Invite User">
+    Click **Invite User**. The dialog opens with the note "The invite expires in seven days."
+  </Step>
+  <Step title="Fill in the fields">
+    | Field | What to enter |
+    | --- | --- |
+    | FULL NAME | The person's name, 100 characters or fewer. |
+    | EMAIL (FOR LOGIN) | The address they will sign in with. The invite goes here. |
+    | ROLE | General Manager, Service Advisor, Foreman, or Technician. |
+
+    An Owner / Admin cannot be invited. Each shop has one owner.
+  </Step>
+  <Step title="Link a roster tech (Foreman and Technician only)">
+    When you choose Foreman or Technician, a LINK TO ROSTER TECH field appears. It lists "Not linked" and every roster technician that is not already linked to an account.
+
+    The app explains: "This link, not the email address, connects the account to a schedule column. Pick the roster record this person works. Selecting none is allowed, but the person will see setup-incomplete until linked."
+
+    If the person does not have a roster record yet, [add a technician](/team-and-roles/add-a-technician) first.
+  </Step>
+  <Step title="Click Send Invite">
+    Click **Send Invite**. On success you see "The invitation email to [email] is on its way." The person now appears in the Users list with an Invite pending chip.
+  </Step>
+</Steps>
+
+Validation messages you may see: "Enter a full name with 100 characters or fewer.", "Enter a valid email address.", and "Choose a role."
+
+## Resend or revoke an invite
+
+Click a pending invite in the Users list. The detail shows Full name, Email, Role, Sent, Expires, and an Intended roster tech card.
+
+- **Resend Invite** emails a fresh link. The confirm reads "Resend [name]'s invite?"
+- **Revoke Invite** cancels the invite. The confirm reads "Revoke [name]'s invite?"
+
+The app notes: "Resending emails a new link and expires the previous one, so the invitee always has exactly one that works. Revoking cancels the emailed link outright."
+
+<Note>
+Invites expire after seven days. If one expires, send a new invite to the same email.
+</Note>
+
+## Related
+
+- [Accept an invite](/users-and-access/accept-an-invite)
+- [Change a role or deactivate an account](/users-and-access/change-a-role-or-deactivate)
+- [Add a technician](/team-and-roles/add-a-technician)

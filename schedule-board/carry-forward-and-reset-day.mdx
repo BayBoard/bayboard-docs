@@ -1,0 +1,69 @@
+---
+title: Carry Forward and Reset Day
+description: Move unfinished jobs from earlier days onto today, or clear a day back to Unassigned in one step.
+---
+
+Both actions are icon buttons in the top bar next to **Auto Schedule**. Only Owner / Admin, General Manager, and Service Advisor see them, and only while billing is current.
+
+## Carry Forward
+
+Carry Forward sweeps every earlier day and moves uncompleted jobs onto the target day. The target is today if the shop is open, otherwise the next open day.
+
+<Frame>
+  <img src="/images/schedule-board/carry-forward-dialog.png" alt="Carry forward uncompleted jobs confirmation dialog" />
+</Frame>
+
+<Steps>
+  <Step title="Open the dialog">
+    Click the arrow-right icon with the tooltip "Carry Forward Uncompleted Jobs", or press C.
+  </Step>
+  <Step title="Read the confirmation">
+    The dialog is titled "Carry forward uncompleted jobs?" and reads: "Move every uncompleted job scheduled before [target date] onto [target date]. BayBoard places each job on the same Tech at the same time where possible. A taken slot pushes the job later in the day. Anything that does not fit moves to Unassigned. Jobs already in Unassigned are not touched."
+  </Step>
+  <Step title="Confirm">
+    Click **Carry Forward**. The board jumps to the target day if anything was placed.
+  </Step>
+</Steps>
+
+What moves: jobs with status Assigned, In Progress, or Waiting on Parts on any earlier day.
+
+What stays: Completed jobs, and jobs already in Unassigned.
+
+Each job tries the same technician at the same time. If that slot is taken, it moves later in the day. If nothing fits, the job goes to Unassigned with an amber "Bumped, needs scheduling" banner.
+
+The result toast reads "[n] scheduled · [m] bumped to Unassigned". One press handles up to 200 jobs. If more remain, the toast adds "more still to carry". Press C again.
+
+## Reset Day
+
+Reset Day takes every uncompleted job off the day you are viewing and returns it to Unassigned.
+
+<Steps>
+  <Step title="Open the dialog">
+    Click the rotate icon with the tooltip "Reset Day: move all jobs back to Unassigned", or press R.
+  </Step>
+  <Step title="Read the confirmation">
+    The dialog is titled "Reset the day?" and reads: "Every uncompleted job on [date] moves back to Unassigned. Completed jobs stay."
+  </Step>
+  <Step title="Confirm">
+    Click **Reset Day**.
+  </Step>
+</Steps>
+
+What moves: Assigned and In Progress jobs become In Queue. Waiting on Parts jobs keep their status. All of them go to Unassigned.
+
+What stays: Completed and Archived jobs.
+
+The result toast reads "[n] jobs moved to Unassigned".
+
+If you are on a past day, you see "Past days are read-only, so this day cannot be reset." If the day is already empty, you see "Nothing to reset on [date]."
+
+<Warning>
+Check the date in the top bar before you confirm either action.
+</Warning>
+
+## Related
+
+- [Run Auto-Schedule](/auto-scheduler/run-auto-schedule)
+- [Unassigned jobs](/schedule-board/unassigned-jobs)
+
+{/* ASK DANIEL: Do Carry Forward and Reset Day have an Undo on their result toast? The inventory lists Undo for drag, resize, and Auto-Schedule only, so this page does not mention one either way. */}

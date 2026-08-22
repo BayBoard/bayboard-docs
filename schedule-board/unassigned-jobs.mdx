@@ -1,0 +1,58 @@
+---
+title: Unassigned jobs
+description: What waits in the Unassigned panel, how to filter it, and what the tags and banners mean.
+---
+
+The Unassigned panel is the list on the right side of the board. It holds jobs that are not placed on a technician. The header reads "Unassigned Jobs" with the count and total hours.
+
+<Frame>
+  <img src="/images/schedule-board/unassigned-panel.png" alt="Unassigned Jobs panel with Job Type and Status filters, job cards, and the Add New Job button" />
+</Frame>
+
+## What lands here
+
+- New jobs saved without both a Technician and a Tech Start Time.
+- Jobs set to In Queue.
+- Jobs set to Waiting on Parts that are not on the board.
+- Jobs you unassign by dragging them off the board or clicking **Unassign** in Job Details.
+- Jobs moved off the board by Reset Day.
+- Jobs that Carry Forward or Auto-Schedule could not fit.
+
+Archived jobs live here too, hidden behind a filter.
+
+## Filters
+
+Two filters sit under the header.
+
+- **Job Type** shows all types or one type.
+- **Status** shows all statuses or one. Choose Archived to see archived jobs so you can restore one.
+
+## What a card shows
+
+Each card shows the customer, vehicle, description, hours, a job-type chip, and a status pill. Two extras can appear:
+
+- **"For [tech]" tag.** The job was saved with a technician but no start time. It is meant for that tech but not yet placed. Auto-Schedule prefers that tech for the job.
+- **Warning triangle.** The promised time has passed and the job is not Completed. See [Promised time](/schedule-board/promised-time).
+
+## Carried-forward banner
+
+A job that Carry Forward could not re-place shows an amber banner: "CARRIED FORWARD AFTER THE PRIOR DAY RAN OUT OF TECHNICIAN CAPACITY." with the label "Bumped, needs scheduling". Drag it onto the board or run Auto-Schedule to place it. See [Carry Forward and Reset Day](/schedule-board/carry-forward-and-reset-day).
+
+## Collapse the panel
+
+Click the chevron in the header to collapse the panel and widen the board. Click again to bring it back. Ctrl+B on Windows, Cmd+B on Mac, collapses the panel together with the navigation rail and Shop Performance.
+
+## Add New Job
+
+The **Add New Job** button sits at the bottom of the panel. It appears for Owner / Admin, General Manager, Service Advisor, and Foreman when billing is current. See [Add a job](/schedule-board/add-a-job).
+
+## Past days
+
+On a past day the header shows a "Past days are read-only." chip. You cannot drag from the panel, but you can still open a card, change its status, or archive it.
+
+## Related
+
+- [Assign a job](/schedule-board/assign-a-job)
+- [Job statuses](/schedule-board/job-statuses)
+
+{/* ASK DANIEL: The app's bump label is "Bumped — needs scheduling" with an em dash. The style rules ban dashes, so this page quotes it as "Bumped, needs scheduling". Keep the paraphrase, or quote the app exactly? */}

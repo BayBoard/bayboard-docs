@@ -1,0 +1,31 @@
+---
+title: Delete time off
+description: Remove a time-off block from a technician.
+---
+
+Owner / Admin, General Manager, Service Advisor, and Foreman can delete time off. There is no edit. To change a block, delete it and add a new one.
+
+## Delete a block
+
+<Steps>
+  <Step title="Open Time Off Management">
+    Service Advisor and Foreman: open Settings and pick **Time Off**, then pick the technician. Owner / Admin and General Manager: open Settings, pick **Team**, and click the technician.
+  </Step>
+  <Step title="Find the block">
+    Blocks are listed under the form as the date, All day or the time range, and the reason. Click the trash button on the block you want to remove.
+  </Step>
+  <Step title="Confirm">
+    A dialog asks "Delete time off?" with "This removes [shortName]'s [date] block ([reason]). Jobs already moved to Unassigned stay there." Click **Delete** to remove it or **Cancel** to keep it.
+  </Step>
+</Steps>
+
+A toast shows "Time off deleted". The hatched overlay leaves the technician's column on the board.
+
+## Jobs that were moved
+
+Deleting a block does not put jobs back. Any job that moved to the Unassigned panel when the block was added stays there. Drag it back onto the board or run Auto-Schedule to place it again.
+
+## Related
+
+- [Add time off](/time-off/add-time-off)
+- [Assign a job](/schedule-board/assign-a-job)

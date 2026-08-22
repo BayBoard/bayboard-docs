@@ -1,0 +1,57 @@
+---
+title: Job statuses
+description: The six job statuses, what each means, and how to change them.
+---
+
+Every job has one of six statuses. The set is the same for every shop and cannot be changed. Settings > Statuses and Settings > Job Types are reference lists only.
+
+## The six statuses
+
+| Status | Card label | Meaning |
+| --- | --- | --- |
+| In Queue | Queued | Not on the board. Waits in the Unassigned panel. |
+| Assigned | Assigned | On a technician's column at a time. |
+| In Progress | Working | Work has started. |
+| Waiting on Parts | Parts | Parts are ordered. Can sit on the board or in Unassigned. |
+| Completed | Completed | Done. The card hatches and fades and cannot be dragged. |
+| Archived | Archived | Off the board and out of the active Unassigned list. |
+
+Setting a job to In Queue or Archived takes it off the board.
+
+## Change a status
+
+<Frame>
+  <img src="/images/schedule-board/status-menu.png" alt="Set status menu opened from a job card's status pill" />
+</Frame>
+
+Click the status pill on any card. A menu titled "Set status" lists Archive, Assigned, Completed, In Progress, In Queue, and Waiting on Parts. Pick one.
+
+You can also open the card and use the Status buttons in Job Details. Either way the change saves at once.
+
+Status changes work on past days too. You need the Owner / Admin, General Manager, Service Advisor, or Foreman role.
+
+## Waiting on Parts
+
+Choosing Waiting on Parts opens a window titled "Waiting on Parts" that reads "Record when parts were ordered and the expected arrival date."
+
+| Field | Notes |
+| --- | --- |
+| Parts ordered date | Required. Cannot be in the future. |
+| Parts ETA date | Optional. |
+
+Click **Confirm** to set the status or **Cancel** to leave it unchanged. Auto-Schedule uses the ETA to decide when the job is ready to place. See [Run Auto-Schedule](/auto-scheduler/run-auto-schedule).
+
+## Archive a job
+
+Choosing Archive asks "Archive job?" with the note "This job will move off the board and out of the active Unassigned list. You can find it again with the Archived filter." Click **Archive** to confirm or **Cancel**.
+
+To find an archived job later, open the Unassigned panel and set the Status filter to Archived. There is no delete. Archiving is the only way to remove a job, and you can set it back to another status at any time.
+
+## Completed jobs
+
+A Completed job stays where it is. It cannot be dragged, resized, or archived until you change its status. If you try, you see "Revert the completion first, then move the job." or "Revert the completion first, then archive." Set the status to In Progress or Assigned first, then make your change.
+
+## Related
+
+- [Job details](/schedule-board/job-details)
+- [Unassigned jobs](/schedule-board/unassigned-jobs)

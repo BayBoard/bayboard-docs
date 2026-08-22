@@ -1,0 +1,55 @@
+---
+title: Users and access
+description: The five roles, what each one can do, and how accounts get created.
+---
+
+Every person who signs in to BayBoard has one role. The role sets what they see and what they can change. Accounts are created by invitation only. There is no self-serve signup.
+
+## The five roles
+
+| Role | In one line |
+| --- | --- |
+| Owner / Admin | Full access, including billing and report exports. One per shop. |
+| General Manager | Runs the shop: board, settings, team, users, reports. No billing. |
+| Service Advisor | Works the board and Auto-Schedule. Views the team and logs time off. |
+| Foreman | Works the board and logs time off. Views users and settings reference screens. |
+| Technician | Sees the board and their own hours. Cannot change the board. |
+
+## Permission matrix
+
+| Action | Owner / Admin | General Manager | Service Advisor | Foreman | Technician |
+| --- | --- | --- | --- | --- | --- |
+| See the board, search, Job Details | Yes | Yes | Yes | Yes | Yes |
+| Add / edit jobs, drag, status, archive | Yes | Yes | Yes | Yes | No (read-only) |
+| Auto Schedule, Carry Forward, Reset Day | Yes | Yes | Yes | No | No |
+| General (shop profile, hours, pay period) | Yes | Yes | No | No | No |
+| Scheduling (Auto-Schedule policy) | Yes | Yes | No | No | No |
+| Team: view | Yes | Yes | Yes | Yes | No |
+| Team: add / edit / archive / reorder techs | Yes | Yes | No | No | No |
+| Tech Capability Profile | Edit | Edit | Hidden | View | No |
+| Users: view | Yes | Yes | No | View | No |
+| Invite, resend, revoke, change role, deactivate, reactivate | Yes | Yes | No | No | No |
+| Job Types / Statuses reference | Yes | Yes | No | Yes | No |
+| Time Off tab | Via Team | Via Team | Yes | Yes | No |
+| Add / delete time off | Yes | Yes | Yes | Yes | No |
+| Billing | Yes | No | No | No | No |
+| Reports: Today, Scoreboard | Yes | Yes | Yes | Yes | No |
+| Reports: My hours | No | No | No | Yes | Yes |
+| Reports: Export CSV, Print | Yes | No | No | No | No |
+| Notifications, My Profile | Yes | Yes | Yes | Yes | Yes |
+
+When a page is not available for a role, BayBoard shows "You don't have access" and "This page is not available for your role."
+
+<Warning>
+When payment is past due, the whole app becomes read-only for every role, including Owner / Admin. The board and every Settings tab stay visible but cannot be changed until the payment method is updated. See [Billing](/billing).
+</Warning>
+
+## Roster technician vs user account
+
+A user account is separate from a technician's column on the board. The column comes from the roster in Settings > Team. A Foreman or Technician account connects to a column through the LINK TO ROSTER TECH field on the invite. See [Team and roles](/team-and-roles).
+
+<CardGroup cols={2}>
+  <Card title="Invite a user" href="/users-and-access/invite-a-user">Send an invite with a role and, for techs, a roster link.</Card>
+  <Card title="Accept an invite" href="/users-and-access/accept-an-invite">What the invited person does to set up their account.</Card>
+  <Card title="Change a role or deactivate an account" href="/users-and-access/change-a-role-or-deactivate">Adjust access or turn an account off and on.</Card>
+</CardGroup>
