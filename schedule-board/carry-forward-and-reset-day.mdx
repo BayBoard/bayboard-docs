@@ -29,9 +29,11 @@ What moves: jobs with status Assigned, In Progress, or Waiting on Parts on any e
 
 What stays: Completed jobs, and jobs already in Unassigned.
 
-Each job tries the same technician at the same time. If that slot is taken, it moves later in the day. If nothing fits, the job goes to Unassigned with an amber "Bumped, needs scheduling" banner.
+Each job tries the same technician at the same time. If that slot is taken, it moves later in the day. If nothing fits, the job goes to Unassigned with an amber banner that starts with "Bumped".
 
 The result toast reads "[n] scheduled · [m] bumped to Unassigned". One press handles up to 200 jobs. If more remain, the toast adds "more still to carry". Press C again.
+
+Carry Forward has no Undo. To put a job back, drag it to its old slot or run Auto-Schedule.
 
 ## Reset Day
 
@@ -53,7 +55,7 @@ What moves: Assigned and In Progress jobs become In Queue. Waiting on Parts jobs
 
 What stays: Completed and Archived jobs.
 
-The result toast reads "[n] jobs moved to Unassigned".
+The result toast reads "[n] jobs moved to Unassigned". Reset Day has no Undo, so drag jobs back or run Auto-Schedule to rebuild the day.
 
 If you are on a past day, you see "Past days are read-only, so this day cannot be reset." If the day is already empty, you see "Nothing to reset on [date]."
 
@@ -65,5 +67,3 @@ Check the date in the top bar before you confirm either action.
 
 - [Run Auto-Schedule](/auto-scheduler/run-auto-schedule)
 - [Unassigned jobs](/schedule-board/unassigned-jobs)
-
-{/* ASK DANIEL: Do Carry Forward and Reset Day have an Undo on their result toast? The inventory lists Undo for drag, resize, and Auto-Schedule only, so this page does not mention one either way. */}
