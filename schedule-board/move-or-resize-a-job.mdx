@@ -1,0 +1,41 @@
+---
+title: Move or resize a job
+description: Change a scheduled job's time, technician, or block length on the board.
+---
+
+You need the Owner / Admin, General Manager, Service Advisor, or Foreman role. Moves and resizes work only on the day you are viewing, not on past or future days.
+
+## Move a job
+
+Drag a scheduled card to a new time slot, or across to another technician's column. Press Esc mid-drag to cancel and put the card back. A toast says "Moved." when it lands.
+
+Completed jobs cannot be dragged. Revert the completion first if you need to move one. See [Job statuses](/schedule-board/job-statuses).
+
+Dropping on top of another job pushes that job and the ones below it later. The same drop rules apply as when you assign. See [Assign a job](/schedule-board/assign-a-job) for the full list of messages.
+
+## Resize a job
+
+Each card has a grip strip along its bottom edge. Hover it to see "Drag to resize, or open Edit Job to set the block length". Drag the grip to change when the job ends. The start does not move.
+
+Resizing follows these rules:
+
+- The end snaps to 30-minute steps.
+- The shortest block is 30 minutes.
+- The block cannot run past closing time.
+- The block cannot run into the next job on that technician.
+- The block cannot be longer than Est. Hours, rounded down to the nearest 30 minutes.
+
+A toast says "Resized." when you let go.
+
+<Tip>
+To set an exact length without dragging, open the card, click **Edit Job**, and change Scheduled Time. Enter the length in hours, in half-hour steps, then click **Save Changes**.
+</Tip>
+
+## Undo
+
+Every "Moved." and "Resized." toast has an **Undo** action for 10 seconds. If the board changed since, you see "That undo no longer fits. The board has changed." If a change fails to save, the toast says "The change failed. The previous board was restored." with **Retry**.
+
+## Related
+
+- [Assign a job](/schedule-board/assign-a-job)
+- [Job details](/schedule-board/job-details)

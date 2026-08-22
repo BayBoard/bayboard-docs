@@ -1,0 +1,43 @@
+---
+title: Today
+description: A live view of what is on the board, what is at risk, and what is stuck.
+---
+
+Today is the first lens in Reports. Owner / Admin, General Manager, Service Advisor, and Foreman can open it.
+
+Today is live. The subline reads "Live · as of [time]". Click **Refresh** to pull the latest numbers. The lens also refreshes on its own when you come back to the tab. There is no range picker on this lens.
+
+## The five tiles
+
+Each tile has an info tooltip and a **View Jobs (n)** button.
+
+| Tile | Counts | Hint text under the number |
+| --- | --- | --- |
+| Cars on the board | Unique vehicle visits scheduled today | "[x]h booked today" |
+| At-risk promises | Jobs promised today that are not done | "Nothing promised is late" when clear |
+| Stuck jobs | Jobs with no status change in 24 hours | "Everything is moving" when clear |
+| Waiting on parts | Jobs currently in Waiting on Parts | "[n] past their ETA" or "No past-due ETAs" |
+| Not on the board | Jobs in the Unassigned panel | "[x]h of work unplaced" |
+
+## The four panels
+
+Below the tiles:
+
+- **Today's booked load vs available** shows shop booked hours against available hours with "[n]% utilized", then a per-technician list.
+- **Promised today, not done yet** lists the at-risk promises. When empty it reads "Nothing on the line for today."
+- **Jobs that have not moved** is a table with RO #, Customer / Vehicle, Tech, Status, and Time in status. When empty it reads "No jobs have been stuck for 24 hours."
+- **Waiting for a place on the board** lists unassigned jobs. When empty it reads "Every open job has a place on the board."
+
+## Open the jobs behind a tile
+
+Click **View Jobs (n)** on any tile. A panel opens on the right with the jobs in that slice. Click an RO # to open its Job Details. The panel shows the first 200 rows; click **Show All [n]** to load the rest. Press Esc to close it.
+
+## Empty states
+
+If the shop has no jobs yet, the lens reads "No jobs yet" with "Once you put cars on the board, they'll show up here."
+
+## Related
+
+- [Promised time](/schedule-board/promised-time)
+- [Unassigned jobs](/schedule-board/unassigned-jobs)
+- [Scoreboard](/reports/scoreboard)

@@ -1,0 +1,45 @@
+---
+title: Promised time
+description: Set a promised-by time on a job and see where overdue promises show up.
+---
+
+A promised time is when you told the customer the vehicle would be ready. BayBoard shows it on the card, warns you when it passes, and weighs it when it schedules.
+
+## Set a promised time
+
+<Steps>
+  <Step title="Open the job editor">
+    Click the card, then click **Edit Job**. For a new job, use **Add New Job**.
+  </Step>
+  <Step title="Fill both promise fields">
+    Under Schedule & Assignment, set Promised By Date and Promised By Time. Times are the shop's 30-minute slots. You must set both or neither. Leaving one blank shows "Promised By date and time must both be selected."
+  </Step>
+  <Step title="Save">
+    Click **Save Changes**.
+  </Step>
+</Steps>
+
+Promised time cannot be edited inline in Job Details. It shows there as "Promised By" with the time, or "None set".
+
+## How it shows on the board
+
+- Cards of one hour or longer show a red flag with the time, such as "Promised by 3:00 PM".
+- If the promise is on a different day than the board you are viewing, the date comes first: "8/14 3:00 PM".
+- 30-minute cards are too small for the flag. Hover the card to see the promise in the tooltip.
+
+{/* TODO screenshot: job card with promise flag */}
+
+## Overdue promises
+
+A promise is overdue when the time has passed and the job is not Completed. In the Unassigned panel the flag becomes a warning triangle. On board cards the look does not change, but screen readers announce "Overdue: promised by" with the time.
+
+The Today report has an "At-risk promises" tile that lists jobs promised today that are not done. See [Today](/reports/today).
+
+## Auto-Schedule and promises
+
+Honor promised-by is one of the soft preferences Auto-Schedule weighs when it places Unassigned jobs. See [Auto-Scheduler](/auto-scheduler) and [Scheduling preferences](/auto-scheduler/scheduling-preferences).
+
+## Related
+
+- [Add a job](/schedule-board/add-a-job)
+- [Job details](/schedule-board/job-details)
