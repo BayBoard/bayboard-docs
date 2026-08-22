@@ -53,7 +53,7 @@ Role names as the app shows them: Owner / Admin, General Manager, Service Adviso
 | Contact Support | `support/contact-support.mdx` | Everyone | `/support/contact` form on `dev` (PR 556 path): caps, types, rejection copy, "Ticket sent", mailto failsafe. |
 | Keyboard shortcuts | `support/keyboard-shortcuts.mdx` | Everyone | `SUPPORT_SHORTCUT_GROUPS`, only `available: true` entries. |
 | System status | `support/system-status.mdx` | Everyone | `/support/system-status`, status.bayboard.io. |
-| What's new | `changelog.mdx` | Everyone | `SUPPORT_CHANGELOG` only, verbatim bullets. |
+| What's new | `changelog.mdx` | Everyone | `SUPPORT_CHANGELOG` bullets, collapsed into one v1.0 launch entry at Daniel's request (Aug 22, 2026). Later batches go above it as v1.01 and so on. The in-app What's New screen still lists the eight pre-launch entries until `SUPPORT_CHANGELOG` is collapsed in the app. |
 
 ## Screenshots
 
