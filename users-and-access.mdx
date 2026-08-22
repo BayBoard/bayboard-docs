@@ -7,38 +7,30 @@ Every person who signs in to BayBoard has one role. The role sets what they see 
 
 ## The five roles
 
-| Role | In one line |
-| --- | --- |
-| Owner / Admin | Full access, including billing and report exports. One per shop. |
-| General Manager | Runs the shop: board, settings, team, users, reports. No billing. |
-| Service Advisor | Works the board and Auto-Schedule. Views the team and logs time off. |
-| Foreman | Works the board and logs time off. Views users and settings reference screens. |
-| Technician | Sees the board and their own hours. Cannot change the board. |
+**Owner / Admin** has full access. They can do everything below, plus Billing and report exports. There is one per shop.
 
-## Permission matrix
+**General Manager** runs the shop day to day: the board, Auto-Schedule, shop settings, the technician roster, users, and reports. They cannot open Billing or export reports.
 
-| Action | Owner / Admin | General Manager | Service Advisor | Foreman | Technician |
+**Service Advisor** works the board: add, assign, and update jobs, run Auto-Schedule, Carry Forward, and Reset Day, and log time off. They can view the team but cannot change settings, the roster, or users.
+
+**Foreman** works the board and logs time off, and sees the Today and Scoreboard reports plus their own My hours. They cannot run Auto-Schedule, Carry Forward, or Reset Day, and they see users and settings as view only.
+
+**Technician** sees the board, search, and Job Details, and their own My hours report. They cannot change the board.
+
+Everyone can change their own profile, password, and notification settings.
+
+## Who can do what
+
+| | Owner / Admin | General Manager | Service Advisor | Foreman | Technician |
 | --- | --- | --- | --- | --- | --- |
-| See the board, search, Job Details | Yes | Yes | Yes | Yes | Yes |
-| Add / edit jobs, drag, status, archive | Yes | Yes | Yes | Yes | No (read-only) |
-| Auto Schedule, Carry Forward, Reset Day | Yes | Yes | Yes | No | No |
-| General (shop profile, hours, pay period) | Yes | Yes | No | No | No |
-| Scheduling (Auto-Schedule policy) | Yes | Yes | No | No | No |
-| Team: view | Yes | Yes | Yes | Yes | No |
-| Team: add / edit / archive / reorder techs | Yes | Yes | No | No | No |
-| Tech Capability Profile | Edit | Edit | Hidden | View | No |
-| Users: view | Yes | Yes | No | View | No |
-| Invite, resend, revoke, change role, deactivate, reactivate | Yes | Yes | No | No | No |
-| Job Types / Statuses reference | Yes | Yes | No | Yes | No |
-| Time Off tab | Via Team | Via Team | Yes | Yes | No |
-| Add / delete time off | Yes | Yes | Yes | Yes | No |
-| Billing | Yes | No | No | No | No |
-| Reports: Today, Scoreboard | Yes | Yes | Yes | Yes | No |
-| Reports: My hours | No | No | No | Yes | Yes |
-| Reports: Export CSV, Print | Yes | No | No | No | No |
-| Notifications, My Profile | Yes | Yes | Yes | Yes | Yes |
+| Add, assign, and update jobs | Yes | Yes | Yes | Yes | No |
+| Auto-Schedule, Carry Forward, Reset Day | Yes | Yes | Yes | No | No |
+| Add time off | Yes | Yes | Yes | Yes | No |
+| Shop settings and the technician roster | Yes | Yes | No | No | No |
+| Invite and manage users | Yes | Yes | No | No | No |
+| Billing, Export CSV, Print | Yes | No | No | No | No |
 
-When a page is not available for a role, BayBoard shows "You don't have access" and "This page is not available for your role."
+Each task page says which roles can do that task. When a page is not available for a role, BayBoard shows "You don't have access" and "This page is not available for your role."
 
 <Warning>
 When payment is past due, the whole app becomes read-only for every role, including Owner / Admin. The board and every Settings tab stay visible but cannot be changed until the payment method is updated. See [Billing](/billing).
