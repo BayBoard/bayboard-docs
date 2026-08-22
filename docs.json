@@ -2,6 +2,25 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "BayBoard",
+  "description": "Help for BayBoard, the schedule board for auto repair shops. Guides for owners, service advisors, foremen, and technicians.",
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "BayBoard help",
+      "twitter:card": "summary_large_image"
+    },
+    "organization": {
+      "name": "BayBoard",
+      "legalName": "BayBoard LLC",
+      "url": "https://bayboard.io"
+    }
+  },
+  "search": {
+    "prompt": "Search help..."
+  },
+  "metadata": {
+    "timestamp": true
+  },
   "colors": {
     "primary": "#1E3A5F",
     "light": "#3669AC",
