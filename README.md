@@ -6,7 +6,7 @@ Shop-staff help for [BayBoard](https://bayboard.io), the schedule board for auto
 
 - `docs.json`: site navigation, branding, and SEO settings.
 - `*.mdx`: one page per task, grouped by folder (`schedule-board/`, `reports/`, and so on).
-- `changelog.mdx`: sole source of truth for What's New. The app opens https://docs.bayboard.io/changelog in a new tab. Do not maintain a duplicate changelog in the app repository.
+- `changelog.mdx`: sole public source for What's New. The app opens https://docs.bayboard.io/changelog in a new tab. Do not maintain a duplicate changelog in the app repository. The changelog is a launch-facing product summary, not an engineering log. Before launch, keep one consolidated entry for what will be available at launch; small pre-launch tweaks are fine as remaining work settles. After launch, add entries only in meaningful logical batches, not for every change, session, PR, or internal version. Do not publish synthetic pre-launch release history.
 - `images/`: screenshots from the live app.
 - `logo/`, `favicon.png`, `style.css`: brand assets and overrides.
 
