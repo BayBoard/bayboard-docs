@@ -6,6 +6,7 @@ Shop-staff help for [BayBoard](https://bayboard.io), the schedule board for auto
 
 - `docs.json`: site navigation, branding, and SEO settings.
 - `*.mdx`: one page per task, grouped by folder (`schedule-board/`, `reports/`, and so on).
+- `changelog.mdx`: sole source of truth for What's New. The app opens https://docs.bayboard.io/changelog in a new tab. Do not maintain a duplicate changelog in the app repository.
 - `images/`: screenshots from the live app.
 - `logo/`, `favicon.png`, `style.css`: brand assets and overrides.
 
