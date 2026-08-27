@@ -1,6 +1,6 @@
 ---
 title: Notifications
-description: Choose which in-app alerts you get in Settings > Notifications.
+description: Choose your in-app alerts in Settings > Notifications.
 ---
 
 Settings > Notifications controls your own in-app alerts. Every role has this section. Each toggle saves as soon as you change it. There is no Save button.
@@ -17,15 +17,13 @@ Defaults depend on your role. Owner starts with Promised time approaching off, a
 
 The End-of-day wrap title in Settings includes the scope for your role: **Your day** for Technician, **The floor** for Foreman, **The shop** for Owner / Admin, General Manager, and Service Advisor.
 
-| Alert | When it fires | Who sees it |
-| --- | --- | --- |
-| Promised time at risk | Time remaining before the promised time is under the remaining hours plus 1 hour. Fixed rule, no guesswork. | All roles |
-| Promised time approaching | 60 minutes remain before a promised time. Owner default is off. | All roles |
-| Waiting customer not started | A waiting job has been on the board 15 minutes without a start. | All roles except Technician |
-| Jobs carried forward | Jobs were moved to a later day by Carry Forward. | All roles |
-| End-of-day wrap | A summary after closing time. Hours completed vs. goal, jobs completed, and jobs carried over. | All roles. Owner default is off. |
-| Same-day time-off bump | A job was moved to Unassigned by time off added for today. | All roles |
-| Job assigned to you | Someone else put a job on your column. This toggle also covers Auto-Schedule. | Foreman and Technician. Not shown for other roles. |
+- **Promised time at risk.** Fires when time remaining before the promised time is under the remaining hours plus 1 hour. Fixed rule, no guesswork. All roles.
+- **Promised time approaching.** Fires when 60 minutes remain before a promised time. Owner default is off. All roles.
+- **Waiting customer not started.** Fires when a waiting job has been on the board 15 minutes without a start. Technician does not see this alert at all.
+- **Jobs carried forward.** Fires when jobs were moved to a later day by Carry Forward. Shown to all roles.
+- **End-of-day wrap.** A summary after closing time: hours completed vs. goal, jobs completed, and jobs carried over. All roles. Owner default is off.
+- **Same-day time-off bump.** Fires when a job was moved to Unassigned by time off added for today. All roles.
+- **Job assigned to you.** Fires when someone else put a job on your column. This toggle also covers Auto-Schedule. Foreman and Technician only. Not shown for other roles.
 
 Auto-Schedule uses a separate bell titled "Jobs scheduled for you". It is one summary for that run, such as "3 scheduled". It uses the same **Job assigned to you** Settings toggle. Assigning a job to yourself does not fire this alert.
 

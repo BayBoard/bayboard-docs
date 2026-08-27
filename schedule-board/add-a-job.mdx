@@ -40,20 +40,30 @@ Required fields are marked with an asterisk.
 | Technician* | First option is "Unassigned". |
 | Est. Hours* | Filled from the job type until you edit it. |
 | Tech Start Time | 30-minute slots, or "None". |
-| Scheduled Time | The block length in hours, not a clock time. Half-hour steps. |
-| Promised By Date, Promised By Time | Set both or neither. |
 | Appointment Time | When the customer is due. |
 | Customer Waiting | "Waiting on site" or "Not waiting". |
+
+Scheduled Time is the block length in hours, not a clock time, in half-hour steps. Promised By Date and Promised By Time must both be set, or both left empty.
 
 ### RO Details
 
 | Field | Notes |
 | --- | --- |
-| RO #* | Digits, or PENDING. Editable after save unless the job is Completed. |
-| Job Type* | Alignment, Diagnostic, Inspection, LOF + Inspection, Pre-Purchase Inspection, Repair. |
-| First Name*, Last Name* | Last Name searches customers after 2 characters. |
+| RO #* | Digits, or PENDING. Editable after save unless the job status is Completed. |
+| Job Type* | Required. |
+| First Name* | Required. |
+| Last Name* | Last Name searches customers after 2 characters. |
 | Phone* | 10 to 15 digits. Locked when you edit an existing job. |
 | Status* | Follows placement unless you change it. |
+
+Job Type is one of:
+
+- Alignment
+- Diagnostic
+- Inspection
+- LOF + Inspection
+- Pre-Purchase Inspection
+- Repair
 
 ### Vehicle
 
@@ -93,18 +103,15 @@ You can change PENDING to digits later, unless the job is Completed. If those di
 ## Common messages
 
 The footer shows one message at a time. Fix it and save again.
-
-| Message | What to do |
-| --- | --- |
-| RO # must contain digits or PENDING. | Use numbers only, or type PENDING. |
-| Est. Hours must be greater than zero. | Enter a value above 0. |
-| Scheduled Time must use half-hour increments. | Use 0.5, 1.0, 1.5, and so on. |
-| Phone must contain 10 to 15 digits. | Remove letters and check the length. |
-| Vehicle make or model is required. | Fill in at least one. |
-| Promised By date and time must both be selected. | Set both fields or clear both. |
-| The scheduled block must fit within the shop's open hours. | Pick an earlier start or a shorter block. |
-| Status must be Assigned when a Technician and Tech Start Time are selected. | Set Status to Assigned, or clear the placement. |
-| Status must be In Queue until both a Technician and Tech Start Time are selected. | Set Status to In Queue, or finish the placement. |
+- **"RO # must contain digits or PENDING."** Use numbers only, or type the word PENDING in the field.
+- **"Est. Hours must be greater than zero."** Enter a value above 0.
+- **"Scheduled Time must use half-hour increments."** Use 0.5, 1.0, 1.5, and so on.
+- **"Phone must contain 10 to 15 digits."** Remove letters and check that the phone has 10 to 15 digits in it.
+- **"Vehicle make or model is required."** Fill in at least one.
+- **"Promised By date and time must both be selected."** Set both fields, or clear both promise fields together.
+- **"The scheduled block must fit within the shop's open hours."** Pick an earlier start or a shorter scheduled block.
+- **"Status must be Assigned when a Technician and Tech Start Time are selected."** Set Status to Assigned, or clear the Technician and start time.
+- **"Status must be In Queue until both a Technician and Tech Start Time are selected."** Set Status to In Queue, or finish placing the job on a technician.
 
 <Note>
 Closing the drawer with unsaved edits asks "Discard unsaved changes?". Choose **Discard Changes** to close or **Cancel** to keep editing. If a save fails, a red banner offers **Retry**.

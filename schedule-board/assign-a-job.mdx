@@ -33,18 +33,16 @@ If you drop onto a slot that already has a job, BayBoard pushes that job and any
 
 The card snaps back and a toast explains why.
 
-| Message | What to do |
-| --- | --- |
-| Past days are read-only. | Go to today or a future day. |
-| That drop is outside the day's configured open hours. | Drop between shop open and close. |
-| That block would end after closing. | Pick an earlier slot or shorten the block. |
-| A scheduled block must be at least half an hour. | Set Est. Hours to 0.5 or more. |
-| That time is unavailable for this technician. | The tech has time off. Pick another time or tech. |
-| That block overlaps another job on this technician. | Drop in open space or on top of a job to push it down. |
-| That drop lands inside another job. | Drop at the start of the other job, not in the middle. |
-| That would shift a completed job. | Completed jobs do not move. Pick another slot. |
-| Not enough room below to fit before closing. | The push-down runs past closing. Pick an earlier slot. |
-| That would push a job into blocked time. | The push-down hits time off. Pick another slot or tech. |
+- **"Past days are read-only."** Go to today or a future day.
+- **"That drop is outside the day's configured open hours."** Drop between shop open and the shop close time.
+- **"That block would end after closing."** Pick an earlier slot or shorten the scheduled block so it fits.
+- **"A scheduled block must be at least half an hour."** Set Est. Hours to 0.5 or more.
+- **"That time is unavailable for this technician."** The tech has time off. Pick another time or another tech.
+- **"That block overlaps another job on this technician."** Drop in open space, or on top of a job so it pushes down.
+- **"That drop lands inside another job."** Drop at the start of the other job, not in the middle of it.
+- **"That would shift a completed job."** Completed jobs do not move. Pick a different open slot on the board.
+- **"Not enough room below to fit before closing."** The push-down runs past closing. Pick an earlier open slot.
+- **"That would push a job into blocked time."** The push-down hits time off. Pick another slot or another tech.
 
 ## Undo
 
@@ -63,7 +61,7 @@ A lock chip in the Unassigned header explains it:
 - "Closed days are read-only."
 - "Past days are read-only."
 - "Your role is read-only here."
-- "Payment past due. Update your payment method to restore full access."
+- "Payment past due. Update your payment method to restore full access." The board stays read-only until payment is updated.
 
 ## Related
 

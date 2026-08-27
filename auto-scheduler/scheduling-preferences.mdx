@@ -1,6 +1,6 @@
 ---
 title: Scheduling preferences
-description: Set the rules and priorities Auto-Schedule follows in Settings > Scheduling.
+description: Set Auto-Schedule rules in Settings > Scheduling.
 ---
 
 Owner / Admin and General Manager can open Settings > Scheduling. Every control on this screen saves immediately. There is no Save button, and a "Changes saved." toast confirms each change.
@@ -13,15 +13,13 @@ The screen opens with a short explanation titled "How Auto-Schedule decides": "R
 
 ## Hard constraints
 
-Hard constraints are always enforced first. Rows marked Locked cannot be turned off because they protect the board from invalid placements.
+Hard constraints are always enforced first. Locked constraints cannot be turned off because they protect the board from invalid placements.
 
-| Constraint | Control | What it does |
-| --- | --- | --- |
-| Skill match | Toggle | Tech can do this job type. Their "avoid" list excludes them. |
-| Parts received | Toggle | Waiting-on-Parts jobs only place when parts ETA is today or earlier. |
-| Respect time off | Locked | Never place a job during an all-day or partial-day time-off block. |
-| No double-booking | Locked | Two jobs can't occupy the same slot on the same tech. |
-| Fits before end of day | Locked | The scheduled block must end by that weekday's closing time. |
+- **Skill match** (toggle). Tech can do this job type. Their "avoid" list excludes them from it.
+- **Parts received** (toggle). Waiting-on-Parts jobs only place when parts ETA is today or earlier than today.
+- **Respect time off** (locked). Never place a job during an all-day or partial-day time-off block on the column.
+- **No double-booking** (locked). Two jobs can't occupy the same slot on the same tech.
+- **Fits before end of day** (locked). The scheduled block must end by that weekday's shop closing time.
 
 ## Parts-ready hour
 

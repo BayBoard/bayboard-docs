@@ -11,14 +11,12 @@ The Tech Capability Profile is a panel on each technician in Settings > Team. It
 
 ## Fields
 
-| Field | What it means |
-| --- | --- |
-| PRIMARY SKILL | The job type this technician does best. One of the six job types. |
-| SECONDARY SKILLS | Other job types they can take. |
-| AVOID (IF POSSIBLE) | Job types to keep away from this technician. |
-| SKILL LEVELS (1-5) | Sliders for Diagnostics, Inspection, Repair, and Alignment. |
-| PACE | How fast this technician works through jobs. |
-| PREFERRED WORK | Free text, for example "Complex diagnostics early in the day". |
+- **PRIMARY SKILL.** The job type this technician does best. Pick one of the six job types.
+- **SECONDARY SKILLS.** Other job types they can take.
+- **AVOID (IF POSSIBLE).** Job types to keep away from this technician when you can.
+- **SKILL LEVELS (1-5).** Sliders for Diagnostics, Inspection, Repair, and Alignment, each from 1 to 5.
+- **PACE.** How fast this technician works through jobs.
+- **PREFERRED WORK.** Free text, for example "Complex diagnostics early in the day".
 
 Click **Save Changes** after editing.
 
@@ -26,9 +24,9 @@ Click **Save Changes** after editing.
 
 Auto-Schedule checks hard constraints first, then weighs soft preferences in the order set in Settings > Scheduling.
 
-- **Skill match** is a hard constraint. When it is on, a technician's avoid list excludes them from that job type. The only exception is a job tagged "For" that technician in the Unassigned panel.
+- **Skill match** is a hard constraint. When it is on, a technician's avoid list excludes them from that job type. The only exception is a job tagged "For" that technician in the Unassigned Jobs panel.
 - **Best-qualified tech** is a soft preference. It favors the technician whose primary skill, secondary skills, and skill levels fit the job.
-- **Match pace to job** is a soft preference. It uses the PACE setting to pair jobs with technicians.
+- **Match pace to job** is a soft preference. It uses the PACE setting to pair each job with the right technician.
 
 Turn these on, off, or reorder them in [Scheduling preferences](/auto-scheduler/scheduling-preferences).
 

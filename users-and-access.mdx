@@ -1,6 +1,6 @@
 ---
 title: Users and access
-description: The five roles, what each one can do, and how accounts get created.
+description: The five roles and how accounts are created.
 ---
 
 Every person who signs in to BayBoard has one role. The role sets what they see and what they can change. Accounts are created by invitation only. There is no self-serve signup.
@@ -21,14 +21,12 @@ Everyone can change their own profile, password, and notification settings.
 
 ## Who can do what
 
-| | Owner / Admin | General Manager | Service Advisor | Foreman | Technician |
-| --- | --- | --- | --- | --- | --- |
-| Add, assign, and update jobs | Yes | Yes | Yes | Yes | No |
-| Auto-Schedule, Carry Forward, Reset Day | Yes | Yes | Yes | No | No |
-| Add time off | Yes | Yes | Yes | Yes | No |
-| Shop settings and the technician roster | Yes | Yes | No | No | No |
-| Invite and manage users | Yes | Yes | No | No | No |
-| Billing, Export CSV, Print | Yes | No | No | No | No |
+- **Add, assign, or update a job.** Owner / Admin, General Manager, Service Advisor, and Foreman. Not Technician.
+- **Auto-Schedule, Carry Forward, and Reset Day tools.** Owner / Admin, General Manager, and Service Advisor. Not Foreman, and not the Technician role.
+- **Add time off.** Owner / Admin, General Manager, Service Advisor, and Foreman. Hidden for the Technician role.
+- **Shop settings and the technician roster.** Owner / Admin and General Manager. Not Service Advisor, Foreman, or Technician.
+- **Invite users and manage their access.** Owner / Admin and General Manager. Not Service Advisor, Foreman, or Technician.
+- **Billing, Export CSV, and Print.** Owner / Admin only. Not General Manager, Service Advisor, Foreman, or Technician.
 
 Each task page says which roles can do that task. When a page is not available for a role, BayBoard shows "You don't have access" and "This page is not available for your role."
 
@@ -43,5 +41,5 @@ A user account is separate from a technician's column on the board. The column c
 <CardGroup cols={2}>
   <Card title="Invite a user" href="/users-and-access/invite-a-user">Send an invite with a role and, for techs, a roster link.</Card>
   <Card title="Accept an invite" href="/users-and-access/accept-an-invite">What the invited person does to set up their account.</Card>
-  <Card title="Change a role or deactivate an account" href="/users-and-access/change-a-role-or-deactivate">Adjust access or turn an account off and on.</Card>
+  <Card title="Change a role" href="/users-and-access/change-a-role-or-deactivate">Adjust access or turn an account off and on.</Card>
 </CardGroup>

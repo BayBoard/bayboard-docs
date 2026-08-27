@@ -1,6 +1,6 @@
 ---
 title: Auto-Scheduler
-description: Let BayBoard place Unassigned jobs into open technician time.
+description: Place Unassigned jobs into open technician slots.
 ---
 
 Auto-Schedule places Unassigned jobs into open technician time on the day you are viewing. It never moves a job that is already on the board. Anything that does not fit stays in Unassigned.
@@ -25,11 +25,11 @@ The button is hidden while billing is past due.
 
 Auto-Schedule checks hard constraints first. A job is placed only where every one of these holds.
 
-- Skill match. The technician can do this job type. A technician's "avoid" list excludes them unless the job is tagged "For" that technician.
+- Skill match. The technician can do this job type. A technician's "avoid" list excludes them unless the job is tagged "For" that technician in Unassigned.
 - Parts received. A Waiting on Parts job places only when its parts ETA is today or earlier, and no earlier than the parts-ready hour.
-- Respect time off. No job lands in an all-day or partial-day time-off block.
-- No double-booking. Two jobs cannot share a slot on the same technician.
-- Fits before end of day. The block must end by that weekday's closing time.
+- Respect time off. Jobs never land in an all-day or partial-day time-off block on a tech.
+- No double-booking. Two jobs cannot share a slot on the same technician at once.
+- Fits before end of day. A block cannot run past closing.
 
 Jobs start on 30-minute marks inside shop hours.
 
@@ -44,7 +44,7 @@ Soft preferences then decide which open slot wins. In the default order they are
   <Card title="Scheduling preferences" href="/auto-scheduler/scheduling-preferences">
     Set the hard constraints, parts-ready hour, and preference order.
   </Card>
-  <Card title="Carry Forward and Reset Day" href="/schedule-board/carry-forward-and-reset-day">
+  <Card title="Forward and reset" href="/schedule-board/carry-forward-and-reset-day">
     The two other bulk actions next to the Auto Schedule button.
   </Card>
   <Card title="Tech capability profile" href="/team-and-roles/tech-capability-profile">

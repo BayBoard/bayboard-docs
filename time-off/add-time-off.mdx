@@ -22,7 +22,7 @@ Owner / Admin, General Manager, Service Advisor, and Foreman can add time off. T
     | Field | What to enter |
     | --- | --- |
     | START DATE | First day of the block. |
-    | END DATE | Last day of the block. Same as start for a single day. |
+    | END DATE | Last day of the block. Same as start when the block is a single day. |
     | START TIME | All day, or a 30-minute slot within shop hours. |
     | END TIME | All day, or a 30-minute slot within shop hours. |
     | REASON | Up to 100 characters, for example "Vacation, sick, jury duty...". |
@@ -40,13 +40,11 @@ A block can cover up to 31 calendar days. For a longer absence, add more than on
 
 ## Validation messages
 
-| Message | Fix |
-| --- | --- |
-| Choose a start date. | Pick a START DATE. |
-| Enter a reason for the time off. | Fill in REASON. |
-| End time must be after start time. | Move END TIME later than START TIME. |
-| End date cannot be before start date. | Move END DATE to the start date or later. |
-| Time off ranges cannot exceed 31 calendar days. | Shorten the range or split it into two blocks. |
+- **"Choose a start date."** Pick a START DATE.
+- **"Enter a reason for the time off."** Fill in REASON.
+- **"End time must be after start time."** Move END TIME so it is later than START TIME.
+- **"End date cannot be before start date."** Move END DATE to the start date, or pick a later end date.
+- **"Time off ranges cannot exceed 31 calendar days."** Shorten the range, or split it into two time-off blocks.
 
 ## After you save
 

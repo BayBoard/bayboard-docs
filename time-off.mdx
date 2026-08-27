@@ -7,9 +7,9 @@ A time-off block keeps work off a technician's column for a set window. Use it f
 
 ## What a block does
 
-- Jobs already on the board inside the block move to the Unassigned panel with a red banner.
+- Jobs already on the board inside the block move to the Unassigned panel with a red banner on the card.
 - Auto-Schedule skips the blocked time.
-- Drag and drop onto the blocked time is rejected with "That time is unavailable for this technician."
+- Drag and drop onto the blocked time is rejected with "That time is unavailable for this technician." Pick another slot.
 - The board shows a hatched overlay on the column with an OFF badge for a full day or PARTIAL for part of a day, plus the reason.
 
 A block can be all day or part of a day, and can span up to 31 calendar days.
@@ -18,12 +18,9 @@ A block can be all day or part of a day, and can span up to 31 calendar days.
 
 The place to add time off depends on your role.
 
-| Role | Where |
-| --- | --- |
-| Service Advisor, Foreman | Settings > **Time Off** tab |
-| Owner / Admin, General Manager | Settings > **Team**, pick a technician, then the Time Off Management panel |
-
-Technician cannot add or delete time off.
+- **Service Advisor or Foreman.** Settings > **Time Off** tab
+- **Owner / Admin or General Manager.** Settings > **Team**, pick a technician, then the Time Off Management panel on the right
+- **Technician.** Cannot add or delete time off.
 
 <CardGroup cols={2}>
   <Card title="Add time off" href="/time-off/add-time-off">Block a full day, part of a day, or a date range.</Card>

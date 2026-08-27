@@ -1,6 +1,6 @@
 ---
 title: Schedule board
-description: What the board shows, who can change it, and where to find each task.
+description: What the board shows and who can change it.
 ---
 
 The schedule board is the home screen. It shows one day of work for every technician in the shop. Use it to add jobs, place them on technicians, and track status through the day.
@@ -11,9 +11,9 @@ The schedule board is the home screen. It shows one day of work for every techni
 
 ## What the board shows
 
-- **Technician columns.** Each active technician gets a column. The header shows the short name, a tier label (Foreman, A Tech, B Tech, Apprentice), and a "You" pill on your own column.
-- **Time rows.** Time runs down the left side in 30-minute ticks, from shop open to shop close.
-- **Capacity chip.** Each column header shows open hours for the day, such as "3.5h open" or "1.0h over". Red means under 30 minutes open, amber under 2 hours, green otherwise.
+- **Technician columns.** Each active technician gets a column. The header shows the short name, a tier label (Foreman, A Tech, B Tech, Apprentice), and a "You" pill on the column that is yours.
+- **Time rows.** Time runs down the left side in 30-minute ticks, from when the shop opens to when it closes.
+- **Capacity chip.** Each column header shows open hours for the day, such as "3.5h open" or "1.0h over". Red means under 30 minutes open, amber under 2 hours, and green when more than two hours remain.
 - **Job cards.** Each card shows the customer, vehicle, RO number, hours, job type, and a status pill. Click a card to open Job Details.
 - **Time off.** A hatched overlay with an "OFF" or "PARTIAL" badge marks time a technician is away.
 - **Unassigned panel.** The list on the right side of the board. Jobs wait here until they are placed on a technician.
@@ -31,11 +31,9 @@ Press Ctrl+B on Windows, Cmd+B on Mac, to collapse the navigation rail, Shop Per
 
 ## Who can do what
 
-| Action | Roles |
-| --- | --- |
-| View the board, search, open Job Details | All roles |
-| Add, edit, drag, resize, change status, archive, unassign | Owner / Admin, General Manager, Service Advisor, Foreman |
-| Auto Schedule, Carry Forward, Reset Day | Owner / Admin, General Manager, Service Advisor |
+- **Every role** can view the board, search, and open Job Details.
+- **Add, edit, drag, resize, change status, archive, or unassign a job.** Owner / Admin, General Manager, Service Advisor, or Foreman can do this action.
+- **Auto Schedule, Carry Forward, and Reset Day.** Owner / Admin, General Manager, or Service Advisor can do this action.
 
 Technicians see the board as read-only. If billing is past due, the board is read-only for everyone.
 
@@ -49,6 +47,6 @@ Technicians see the board as read-only. If billing is past due, the board is rea
   <Card title="Job statuses" href="/schedule-board/job-statuses">The six statuses and how to change them.</Card>
   <Card title="Unassigned jobs" href="/schedule-board/unassigned-jobs">What waits in the panel and how to filter it.</Card>
   <Card title="Promised time" href="/schedule-board/promised-time">Set a promise and spot overdue jobs.</Card>
-  <Card title="Carry Forward and Reset Day" href="/schedule-board/carry-forward-and-reset-day">Bulk-move jobs to today or back to Unassigned.</Card>
+  <Card title="Forward and reset" href="/schedule-board/carry-forward-and-reset-day">Bulk-move jobs to today or back to Unassigned.</Card>
   <Card title="Search" href="/schedule-board/search">Find any job by RO, customer, vehicle, or VIN.</Card>
 </CardGroup>
