@@ -1,9 +1,15 @@
 ---
 title: Users and access
-description: The five roles, what each one can do, and how accounts get created.
+description: The five roles and how you create accounts.
 ---
 
 Every person who signs in to BayBoard has one role. The role sets what they see and what they can change. Accounts are created by invitation only. There is no self-serve signup.
+
+Accounts live in Settings > Users.
+
+<Frame>
+  <img src="/images/users-and-access/settings-users.png" alt="Settings > Users with the user list, the Invite User button, and an account showing full name, email, role, and account state" />
+</Frame>
 
 ## The five roles
 
@@ -23,14 +29,16 @@ Everyone can change their own profile, password, and notification settings.
 
 | | Owner / Admin | General Manager | Service Advisor | Foreman | Technician |
 | --- | --- | --- | --- | --- | --- |
-| Add, assign, and update jobs | Yes | Yes | Yes | Yes | No |
-| Auto-Schedule, Carry Forward, Reset Day | Yes | Yes | Yes | No | No |
-| Add time off | Yes | Yes | Yes | Yes | No |
-| Shop settings and the technician roster | Yes | Yes | No | No | No |
-| Invite and manage users | Yes | Yes | No | No | No |
-| Billing, Export CSV, Print | Yes | No | No | No | No |
+| Board jobs | Yes | Yes | Yes | Yes | No |
+| Bulk day actions | Yes | Yes | Yes | No | No |
+| Time off | Yes | Yes | Yes | Yes | No |
+| Shop and roster | Yes | Yes | No | No | No |
+| Users | Yes | Yes | No | No | No |
+| Billing / export | Yes | No | No | No | No |
 
 Each task page says which roles can do that task. When a page is not available for a role, BayBoard shows "You don't have access" and "This page is not available for your role."
+
+Board jobs covers add, assign, and update. Bulk day actions covers Auto-Schedule, Carry Forward, and Reset Day. Billing / export covers Billing, Export CSV, and Print on reports.
 
 <Warning>
 When payment is past due, the whole app becomes read-only for every role, including Owner / Admin. The board and every Settings tab stay visible but cannot be changed until the payment method is updated. See [Billing](/billing).
@@ -41,7 +49,7 @@ When payment is past due, the whole app becomes read-only for every role, includ
 A user account is separate from a technician's column on the board. The column comes from the roster in Settings > Team. A Foreman or Technician account connects to a column through the LINK TO ROSTER TECH field on the invite. See [Team and roles](/team-and-roles).
 
 <CardGroup cols={2}>
-  <Card title="Invite a user" href="/users-and-access/invite-a-user">Send an invite with a role and, for techs, a roster link.</Card>
-  <Card title="Accept an invite" href="/users-and-access/accept-an-invite">What the invited person does to set up their account.</Card>
-  <Card title="Change a role or deactivate an account" href="/users-and-access/change-a-role-or-deactivate">Adjust access or turn an account off and on.</Card>
+  <Card title="Invite a user" href="/users-and-access/invite-a-user">Send a sign-in invite.</Card>
+  <Card title="Accept an invite" href="/users-and-access/accept-an-invite">Set a password.</Card>
+  <Card title="Change a role" href="/users-and-access/change-a-role-or-deactivate">Change role or access.</Card>
 </CardGroup>

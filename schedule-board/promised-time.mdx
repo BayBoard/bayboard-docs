@@ -1,6 +1,6 @@
 ---
 title: Promised time
-description: Set a promised-by time on a job and see where overdue promises show up.
+description: Set a promised-by time and spot overdue work.
 ---
 
 A promised time is when you told the customer the vehicle would be ready. BayBoard shows it on the card, warns you when it passes, and weighs it when it schedules.
@@ -9,7 +9,7 @@ A promised time is when you told the customer the vehicle would be ready. BayBoa
 
 <Steps>
   <Step title="Open the job editor">
-    Click the card, then click **Edit Job**. For a new job, use **Add New Job**.
+    Click the card, then click **Edit Job**. For a new job, use **Add New Job** at Unassigned.
   </Step>
   <Step title="Fill both promise fields">
     Under Schedule & Assignment, set Promised By Date and Promised By Time. Times are the shop's 30-minute slots. You must set both or neither. Leaving one blank shows "Promised By date and time must both be selected."
@@ -19,15 +19,21 @@ A promised time is when you told the customer the vehicle would be ready. BayBoa
   </Step>
 </Steps>
 
+<Frame>
+  <img src="/images/schedule-board/assign-fields.png" alt="The Schedule and Assignment section of the job editor with Promised By Date, Promised By Time, and Customer Waiting" />
+</Frame>
+
 Promised time cannot be edited inline in Job Details. It shows there as "Promised By" with the time, or "None set".
 
 ## How it shows on the board
 
-- Cards of one hour or longer show a red flag with the time, such as "Promised by 3:00 PM".
+- Cards of one hour or longer show a red flag with the time, such as "Promised by 3:00 PM" on the card.
 - If the promise is on a different day than the board you are viewing, the date comes first: "8/14 3:00 PM".
-- 30-minute cards are too small for the flag. Hover the card to see the promise in the tooltip.
+- 30-minute cards are too small for the flag. Hover the card to see the promise in the tooltip on that card.
 
-{/* TODO screenshot: job card with promise flag */}
+<Frame>
+  <img src="/images/schedule-board/promised-time-card.png" alt="A one hour job card showing a red promise flag with the time 8:30 AM next to the repair order number" />
+</Frame>
 
 ## Overdue promises
 

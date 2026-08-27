@@ -126,6 +126,14 @@
         ]
       },
       {
+        "group": "Auto-Scheduler",
+        "pages": [
+          "auto-scheduler",
+          "auto-scheduler/run-auto-schedule",
+          "auto-scheduler/scheduling-preferences"
+        ]
+      },
+      {
         "group": "Team and roles",
         "pages": [
           "team-and-roles",
@@ -141,14 +149,6 @@
           "users-and-access/invite-a-user",
           "users-and-access/accept-an-invite",
           "users-and-access/change-a-role-or-deactivate"
-        ]
-      },
-      {
-        "group": "Auto-Scheduler",
-        "pages": [
-          "auto-scheduler",
-          "auto-scheduler/run-auto-schedule",
-          "auto-scheduler/scheduling-preferences"
         ]
       },
       {
@@ -176,9 +176,10 @@
       {
         "group": "Support",
         "pages": [
+          "support/ask-bayboard",
           "support/contact-support",
-          "support/keyboard-shortcuts",
-          "support/system-status"
+          "support/system-status",
+          "support/keyboard-shortcuts"
         ]
       },
       {

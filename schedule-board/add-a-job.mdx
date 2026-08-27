@@ -1,6 +1,6 @@
 ---
 title: Add a job
-description: Create a repair order from the Unassigned panel and place it on the board or leave it unassigned.
+description: Create a repair order from Unassigned.
 ---
 
 You can add a job if you are an Owner / Admin, General Manager, Service Advisor, or Foreman. The button is hidden when billing is past due.
@@ -13,19 +13,19 @@ You can add a job if you are an Owner / Admin, General Manager, Service Advisor,
 
 <Steps>
   <Step title="Open the drawer">
-    Click **Add New Job** at the bottom of the Unassigned panel, or press N. A drawer opens on the right titled "Job Details" with the subtitle "Add a new repair order to the board."
+    Click **Add New Job** at the bottom of the Unassigned panel, or press N. A drawer opens on the right titled "Job Details" with the subtitle "Add a new repair order to the board." Fill the fields on the form, then save the job.
   </Step>
   <Step title="Fill in RO Details">
-    Enter the RO #, Job Type, customer name, Phone, and Status. Typing two or more letters in Last Name searches existing customers.
+    Enter the RO #, Job Type, customer name, Phone, and Status. Typing two or more letters in Last Name searches existing customers already in the shop.
   </Step>
   <Step title="Fill in Vehicle">
-    Enter the Year, plus Make or Model. Add the VIN and Key Tag if you have them. Write the Description.
+    Enter the Year, plus Make or Model. Add the VIN and Key Tag if you have them. Write the Description of the work to be done.
   </Step>
   <Step title="Set Schedule & Assignment">
     Pick a Technician and Tech Start Time to place the job on the board now. Leave either blank to send the job to Unassigned.
   </Step>
   <Step title="Save">
-    Click **Save Changes**, or press Ctrl+S on Windows, Cmd+S on Mac. Ctrl+Enter also saves. The button stays disabled until you change something.
+    Click **Save Changes**, or press Ctrl+S on Windows, Cmd+S on Mac. Ctrl+Enter also saves. The button stays disabled until you change a field.
   </Step>
 </Steps>
 
@@ -35,25 +35,21 @@ Required fields are marked with an asterisk.
 
 ### Schedule & Assignment
 
-| Field | Notes |
-| --- | --- |
-| Technician* | First option is "Unassigned". |
-| Est. Hours* | Filled from the job type until you edit it. |
-| Tech Start Time | 30-minute slots, or "None". |
-| Scheduled Time | The block length in hours, not a clock time. Half-hour steps. |
-| Promised By Date, Promised By Time | Set both or neither. |
-| Appointment Time | When the customer is due. |
-| Customer Waiting | "Waiting on site" or "Not waiting". |
+- **Technician\*** First option is "Unassigned".
+- **Est. Hours\*** Filled from the job type until you edit it.
+- **Tech Start Time** 30-minute slots, or "None".
+- **Scheduled Time** Block length in hours, not clock time, in half-hour steps on the grid.
+- **Promised By Date and Time** Set both fields, or leave both empty.
+- **Appointment Time** When the customer is due.
+- **Customer Waiting** "Waiting on site" or "Not waiting".
 
 ### RO Details
 
-| Field | Notes |
-| --- | --- |
-| RO #* | Digits, or PENDING. Locked after the job is saved. |
-| Job Type* | Alignment, Diagnostic, Inspection, LOF + Inspection, Pre-Purchase Inspection, Repair. |
-| First Name*, Last Name* | Last Name searches customers after 2 characters. |
-| Phone* | 10 to 15 digits. Locked after the job is saved. |
-| Status* | Follows placement unless you change it. |
+- **RO #\*** Digits, or PENDING. Editable after save unless that job's status is Completed.
+- **Job Type\*** Alignment, Diagnostic, Inspection, LOF + Inspection, Pre-Purchase Inspection, or Repair as the type.
+- **First Name\* and Last Name\*** Last Name searches customers after 2 characters.
+- **Phone\*** 10 to 15 digits. Locked when you edit an existing job.
+- **Status\*** Follows placement unless you change it.
 
 ### Vehicle
 
@@ -88,21 +84,21 @@ Customers and vehicles are matched by phone and VIN. The drawer tells you what w
 
 If the RO # already has a job, a dialog asks "Link to this RO?". Linking reuses that customer, vehicle, and phone. The jobs stay separate, with their own tech, work, status, and promise time. Click **Link To This RO** to continue or **Change RO #** to go back. Some RO numbers cannot be reused. The drawer says "This RO # cannot be reused".
 
+You can change PENDING to digits later, unless the job is Completed. If those digits already belong to the same customer and vehicle, the job can join that ticket. A number that belongs to a different customer or vehicle cannot be reused.
+
 ## Common messages
 
 The footer shows one message at a time. Fix it and save again.
 
-| Message | What to do |
-| --- | --- |
-| RO # must contain digits or PENDING. | Use numbers only, or type PENDING. |
-| Est. Hours must be greater than zero. | Enter a value above 0. |
-| Scheduled Time must use half-hour increments. | Use 0.5, 1.0, 1.5, and so on. |
-| Phone must contain 10 to 15 digits. | Remove letters and check the length. |
-| Vehicle make or model is required. | Fill in at least one. |
-| Promised By date and time must both be selected. | Set both fields or clear both. |
-| The scheduled block must fit within the shop's open hours. | Pick an earlier start or a shorter block. |
-| Status must be Assigned when a Technician and Tech Start Time are selected. | Set Status to Assigned, or clear the placement. |
-| Status must be In Queue until both a Technician and Tech Start Time are selected. | Set Status to In Queue, or finish the placement. |
+- **"RO # must contain digits or PENDING."** Use numbers only, or type the word PENDING in that same RO field.
+- **"Est. Hours must be greater than zero."** Enter a value above 0.
+- **"Scheduled Time must use half-hour increments."** Use 0.5, 1.0, 1.5, and so on.
+- **"Phone must contain 10 to 15 digits."** Remove letters and check the digit count.
+- **"Vehicle make or model is required."** Fill in at least one.
+- **"Promised By date and time must both be selected."** Set both fields, or clear both of those promise fields together.
+- **"The scheduled block must fit within the shop's open hours."** Pick an earlier start time, or a shorter block on the day.
+- **"Status must be Assigned when a Technician and Tech Start Time are selected."** Set Status to Assigned, or clear technician and start time.
+- **"Status must be In Queue until both a Technician and Tech Start Time are selected."** Set Status to In Queue, or finish placing the job on the board.
 
 <Note>
 Closing the drawer with unsaved edits asks "Discard unsaved changes?". Choose **Discard Changes** to close or **Cancel** to keep editing. If a save fails, a red banner offers **Retry**.

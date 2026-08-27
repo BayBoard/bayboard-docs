@@ -1,12 +1,12 @@
 ---
 title: Billing
-description: See your current plan and manage payment in the Stripe Customer Portal.
+description: See your plan and manage payment in Stripe.
 ---
 
 Billing is an Owner / Admin screen. Open Settings and pick **Billing** in the left list. Other roles do not see the tab.
 
 <Frame>
-  <img src="/images/billing/settings-billing.png" alt="Settings > Billing showing the Current plan card and the Open Billing Portal button" />
+  <img src="/images/billing/settings-billing.png" alt="Settings > Billing showing the Current plan card, Open Billing Portal, and Cancel Subscription under the Payment method card" />
 </Frame>
 
 ## Current plan
@@ -19,13 +19,13 @@ The "Current plan" card shows:
 - "Trial ends [date]" while you are on a trial.
 - "Next billing: [date]".
 
-## Update your card, bank account, or billing details
+## Update card, bank, or billing details
 
 The "Payment method" card reads: "Update your card, Link account, bank account, invoices, and billing details in the Stripe Customer Portal."
 
 <Steps>
   <Step title="Click Open Billing Portal">
-    The Stripe Customer Portal opens in a new tab. The button notes "Opens Stripe Customer Portal in a new tab."
+    The Stripe Customer Portal opens in a new browser tab. The button notes "Opens Stripe Customer Portal in a new tab."
   </Step>
   <Step title="Make your changes in the portal">
     Update the card or bank account on file, download invoices, or edit billing details.
@@ -36,6 +36,17 @@ The "Payment method" card reads: "Update your card, Link account, bank account, 
 </Steps>
 
 If the portal cannot open, you see "Billing portal could not be opened." Try again, and if it still fails, [contact support](/support/contact-support). A non-owner who reaches this screen sees "Only the shop owner can manage billing."
+
+## Cancel or resume
+
+**Cancel Subscription** is a text link under the Payment method card. It is hidden while billing is past due, and after you have already scheduled a cancel. Clicking it opens "Cancel subscription?". Type **CANCEL** to enable **Cancel Subscription**, or click **Keep Subscription**.
+
+- On a trial, access continues through the trial end date. No charge follows after you cancel during the trial.
+- On an active plan, access continues until the end of the current billing period. There is no refund and no proration.
+
+After you confirm, the Current plan card shows "Cancels on [date]". The toast reads "Subscription canceled. Access ends [date]."
+
+**Resume subscription** appears when a cancel is already scheduled and the status is still Trial or Active. Click it to keep the plan. The toast reads "Subscription resumed."
 
 ## Trial banner
 
