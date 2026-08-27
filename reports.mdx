@@ -1,13 +1,13 @@
 ---
 title: Reports
-description: See the shop's numbers in three lenses, Today, Scoreboard, and My hours.
+description: Today, Scoreboard, and My hours.
 ---
 
 Reports lives in the left rail. Press G then R to jump there from anywhere. The page has three lenses, shown as tabs at the top.
 
 - **Today** is a live view of the board right now: what is on it, what is at risk, and what is stuck on the floor.
 - **Scoreboard** shows delivered hours, cars finished, and capacity over a date range, compared with the prior period.
-- **My hours** shows one technician's own hours, pay period, and on-time completion rate.
+- **My hours** shows one technician's own hours, pay period, and on-time completion rate for the work they finished.
 
 <Frame>
   <img src="/images/reports/reports-today.png" alt="Reports > Today with the five tiles and the live as-of time" />
@@ -29,7 +29,7 @@ Opening Reports lands on Today. Technicians land on My hours.
 
 Today has no range picker. It shows "Live · as of [time]" with a **Refresh** button, and it refreshes again when you return to the tab.
 
-Scoreboard and My hours have a "Report range" select with these options: Today, This pay period, This week, Last week, This month, Last month, Year to date, Custom. Custom adds "Custom range start" and "Custom range end" date inputs. A custom range can cover at most 366 days.
+Scoreboard and My hours have a "Report range" select with these options: Today, This pay period, This week, Last week, This month, Last month, Year to date, Custom. Custom adds "Custom range start" and "Custom range end" date inputs. A custom range can cover at most 366 calendar days.
 
 ## Open the jobs behind a number
 
@@ -45,15 +45,15 @@ You see "Reports could not load. Check your connection and reload." with a **Rel
 
 <CardGroup cols={2}>
   <Card title="Today" href="/reports/today">
-    Cars on the board, at-risk promises, stuck jobs, parts holds, and what is not placed.
+    Cars and promises.
   </Card>
   <Card title="Scoreboard" href="/reports/scoreboard">
-    Hours delivered, cars finished, capacity used, and on-time promises over a range.
+    Hours and cars.
   </Card>
   <Card title="My hours" href="/reports/my-hours">
-    Your own hours by week, pay period, and month.
+    Hours by week.
   </Card>
   <Card title="Export and print" href="/reports/export-and-print">
-    Download a CSV or print a report as an Owner / Admin.
+    CSV and print.
   </Card>
 </CardGroup>

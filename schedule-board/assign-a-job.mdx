@@ -1,6 +1,6 @@
 ---
 title: Assign a job
-description: Place an Unassigned job on a technician at a time, or take it back off the board.
+description: Place an Unassigned job on a technician, or take it off.
 ---
 
 Assigning puts a job from the Unassigned panel onto a technician column at a start time. You need the Owner / Admin, General Manager, Service Advisor, or Foreman role.
@@ -15,7 +15,7 @@ Assigning puts a job from the Unassigned panel onto a technician column at a sta
     A dashed preview follows you. Green with "Drop at 9:30 AM" means the slot works. Red with "Will not fit" means it does not.
   </Step>
   <Step title="Drop">
-    Release on a green preview. A toast says "Assigned to the board." and the status becomes Assigned.
+    Release on a green preview. A toast says "Assigned to the board." and the status becomes Assigned on that job card.
   </Step>
 </Steps>
 
@@ -39,16 +39,16 @@ If you drop onto a slot that already has a job, BayBoard pushes that job and any
 
 The card snaps back and a toast explains why.
 
-- **"Past days are read-only."** Go to today or a future day.
-- **"That drop is outside the day's configured open hours."** Drop between shop open and the shop close time.
-- **"That block would end after closing."** Pick an earlier slot or shorten the scheduled block so it fits.
-- **"A scheduled block must be at least half an hour."** Set Est. Hours to 0.5 or more.
-- **"That time is unavailable for this technician."** The tech has time off. Pick another time or another tech.
-- **"That block overlaps another job on this technician."** Drop in open space, or on top of a job so it pushes down.
-- **"That drop lands inside another job."** Drop at the start of the other job, not in the middle of it.
-- **"That would shift a completed job."** Completed jobs do not move. Pick a different open slot on the board.
-- **"Not enough room below to fit before closing."** The push-down runs past closing. Pick an earlier open slot.
-- **"That would push a job into blocked time."** The push-down hits time off. Pick another slot or another tech.
+- **"Past days are read-only."** Leave the past day.
+- **"That drop is outside the day's configured open hours."** Drop the card between shop open and shop close on that day.
+- **"That block would end after closing."** Pick an earlier start time, or shorten Est. Hours.
+- **"A scheduled block must be at least half an hour."** Set Est. Hours to 0.5 or more before you drop the card.
+- **"That time is unavailable for this technician."** The tech has time off. Pick another time, or pick a different technician.
+- **"That block overlaps another job on this technician."** Drop in open space, or onto a job so later jobs shift.
+- **"That drop lands inside another job."** Drop at the start of the other job, not in the middle of that other job.
+- **"That would shift a completed job."** Completed jobs stay put. Pick a different open slot farther up that technician's column.
+- **"Not enough room below to fit before closing."** The push-down runs past closing. Pick an earlier start time on the day.
+- **"That would push a job into blocked time."** The push-down hits time off. Pick another slot, or pick a different technician.
 
 ## Undo
 
@@ -67,7 +67,7 @@ A lock chip in the Unassigned header explains it:
 - "Closed days are read-only."
 - "Past days are read-only."
 - "Your role is read-only here."
-- "Payment past due. Update your payment method to restore full access." The board stays read-only until payment is updated.
+- "Payment past due. Update your payment method to restore full access." Update Billing to restore the board.
 
 ## Related
 

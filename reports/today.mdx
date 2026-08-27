@@ -1,6 +1,6 @@
 ---
 title: Today
-description: A live view of what is on the board, what is at risk, and what is stuck on the floor.
+description: Live view of the board, at-risk work, and stuck jobs.
 ---
 
 Today is the first lens in Reports. Owner / Admin, General Manager, Service Advisor, and Foreman can open it.
@@ -11,17 +11,17 @@ Today is live. The subline reads "Live · as of [time]". Click **Refresh** to pu
 
 Each tile has an info tooltip and a **View Jobs (n)** button.
 
-- **Cars on the board.** Unique vehicle visits scheduled today. Hint: "[x]h booked today"
-- **At-risk promises.** Jobs promised today that are not done yet. Hint: "Nothing promised is late" when the tile is clear
-- **Stuck jobs.** Jobs with no status change in 24 hours. Hint: "Everything is moving" when the tile is clear
-- **Not on the board.** Jobs in the Unassigned panel. Hint under the number: "[x]h of work unplaced" on that tile.
-- **Waiting on parts.** Jobs currently in Waiting on Parts. Hint: "[n] past their ETA" or "No past-due ETAs" when none are late
+- **Cars on the board** counts unique vehicle visits on today's board. Hint under the number: "[x]h booked today"
+- **At-risk promises** counts jobs promised today that are still open. Hint: "Nothing promised is late" when the tile is clear
+- **Stuck jobs** counts jobs with no status change for 24 hours. Hint: "Everything is moving" when the tile is clear
+- **Waiting on parts** counts jobs currently in Waiting on Parts. Hint: "[n] past their ETA" or "No past-due ETAs" under the number
+- **Not on the board** counts jobs waiting in Unassigned. Hint: "[x]h of work unplaced"
 
 ## The four panels
 
 Below the tiles:
 
-- **Today's booked load vs available** shows shop booked hours against available hours with "[n]% utilized", then a list for each technician on the floor.
+- **Today's booked load vs available** shows shop booked hours against available hours with "[n]% utilized", then a list for each technician on the roster.
 - **Promised today, not done yet** lists the at-risk promises. When empty it reads "Nothing on the line for today."
 - **Jobs that have not moved** is a table with RO #, Customer / Vehicle, Tech, Status, and Time in status. When empty it reads "No jobs have been stuck for 24 hours."
 - **Waiting for a place on the board** lists unassigned jobs. When empty it reads "Every open job has a place on the board."

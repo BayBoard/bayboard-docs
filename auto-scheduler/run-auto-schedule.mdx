@@ -1,6 +1,6 @@
 ---
 title: Run Auto-Schedule
-description: Place ready Unassigned jobs into open technician time.
+description: Place ready Unassigned jobs in one run.
 ---
 
 Owner / Admin, General Manager, and Service Advisor can run Auto-Schedule. The button is hidden for Foreman and Technician, and for everyone while billing is past due.
@@ -38,7 +38,7 @@ Jobs already on the board are never moved. See [Job statuses](/schedule-board/jo
 
     - "[n] scheduled, [m] still in Unassigned"
     - "[n] jobs scheduled"
-    - "Nothing to schedule. No Unassigned job was ready to place." Nothing on the Unassigned list could be placed.
+    - "Nothing to schedule. No Unassigned job was ready to place." Nothing on this day was ready to put on the board.
 
     Each placed card shows a green ring on the board for 6 seconds so you can see where jobs landed.
   </Step>
@@ -50,11 +50,11 @@ A single run places at most 200 jobs. If more were ready, run it again.
 
 A job that stays in Unassigned gets an amber chip that reads "Didn't fit:" followed by a reason.
 
-- **"the shop is closed"** The day you are viewing is a closed day, so nothing was placed on the board. Move to an open day and run Auto-Schedule on that day.
-- **"waiting on parts, no ETA"** The job is Waiting on Parts with no Parts ETA date. Open the job, set the Parts ETA date, and run again on or after that day.
+- **"the shop is closed"** The day you are viewing is closed, so nothing was placed. Move to an open day and run it again.
+- **"waiting on parts, no ETA"** The job is Waiting on Parts with no Parts ETA date. Open the job, set the Parts ETA date, then run again on or after that day.
 - **"parts due [date]"** The Parts ETA is later than the day you are viewing. Run again on or after that ETA date.
-- **"no qualified tech"** Every technician has this job type on their AVOID (IF POSSIBLE) list. Adjust the avoid lists in the [tech capability profile](/team-and-roles/tech-capability-profile), or pick a Technician for the job without a start time so it is tagged "For" that tech. A "For" tag overrides the avoid list for that job.
-- **"no open capacity"** A qualified technician exists, but no open block fits the job before the shop closes. Free up time, shorten the Est. Hours, or try the job on another day.
+- **"no qualified tech"** Every technician has this job type on their AVOID (IF POSSIBLE) list. Adjust the avoid lists in the [tech capability profile](/team-and-roles/tech-capability-profile), or pick a Technician for the job without a start time so it is tagged "For" that tech. A "For" tag overrides that avoid list for this job.
+- **"no open capacity"** A qualified technician exists, but no open block fits the job before closing. Free up time, shorten Est. Hours, or try a later day.
 
 Service Advisors see "no open capacity" in place of "no qualified tech". The chip clears when the job is edited or the next run happens.
 

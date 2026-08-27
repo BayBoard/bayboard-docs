@@ -11,11 +11,11 @@ The schedule board is the home screen. It shows one day of work for every techni
 
 ## What the board shows
 
-- **Technician columns.** Each active technician gets a column. The header shows the short name, a tier label (Foreman, A Tech, B Tech, Apprentice), and a "You" pill on the column that is yours.
-- **Time rows.** Time runs down the left side in 30-minute ticks, from when the shop opens to when it closes.
-- **Capacity chip.** Each column header shows open hours for the day, such as "3.5h open" or "1.0h over". Red means under 30 minutes open, amber under 2 hours, and green when more than two hours remain.
+- **Technician columns.** Each active technician gets a column. The header shows the short name, a tier label (Foreman, A Tech, B Tech, Apprentice), and a "You" pill on the column that belongs to you on this board.
+- **Time rows.** Time runs down the left side in 30-minute ticks, from shop open through closing time on the grid.
+- **Capacity chip.** Each column header shows open hours for the day, such as "3.5h open" or "1.0h over". Red means under 30 minutes open, amber under 2 hours, and green means more than two hours remain open.
 - **Job cards.** Each card shows the customer, vehicle, RO number, hours, job type, and a status pill. Click a card to open Job Details.
-- **Time off.** A hatched overlay with an "OFF" or "PARTIAL" badge marks time a technician is away.
+- **Time off.** A hatched overlay with an "OFF" or "PARTIAL" badge marks time a technician is out of the shop.
 - **Unassigned panel.** The list on the right side of the board. Jobs wait here until they are placed on a technician.
 - **Shop Performance strip.** The strip at the bottom shows hours completed against the shop goal, assigned hours, and Goal, Assigned, and Done for each technician.
 
@@ -31,22 +31,22 @@ Press Ctrl+B on Windows, Cmd+B on Mac, to collapse the navigation rail, Shop Per
 
 ## Who can do what
 
-- **Every role** can view the board, search, and open Job Details.
-- **Add, edit, drag, resize, change status, archive, or unassign a job.** Owner / Admin, General Manager, Service Advisor, or Foreman can do this action.
-- **Auto Schedule, Carry Forward, and Reset Day.** Owner / Admin, General Manager, or Service Advisor can do this action.
+- **View the board, search, open Job Details.** All roles.
+- **Add, edit, drag, resize, status, archive, unassign.** Owner / Admin, General Manager, Service Advisor, and Foreman.
+- **Auto Schedule, Carry Forward, Reset Day.** Owner / Admin, General Manager, and Service Advisor can run these.
 
 Technicians see the board as read-only. If billing is past due, the board is read-only for everyone.
 
 ## Tasks
 
 <CardGroup cols={2}>
-  <Card title="Add a job" href="/schedule-board/add-a-job">Create a repair order from the Unassigned panel.</Card>
-  <Card title="Assign a job" href="/schedule-board/assign-a-job">Drag a job onto a technician at a time.</Card>
-  <Card title="Move or resize a job" href="/schedule-board/move-or-resize-a-job">Change a job's slot, technician, or block length.</Card>
-  <Card title="Job details" href="/schedule-board/job-details">Read and edit a job from its card.</Card>
-  <Card title="Job statuses" href="/schedule-board/job-statuses">The six statuses and how to change them.</Card>
-  <Card title="Unassigned jobs" href="/schedule-board/unassigned-jobs">What waits in the panel and how to filter it.</Card>
-  <Card title="Promised time" href="/schedule-board/promised-time">Set a promise and spot overdue jobs.</Card>
-  <Card title="Forward and reset" href="/schedule-board/carry-forward-and-reset-day">Bulk-move jobs to today or back to Unassigned.</Card>
-  <Card title="Search" href="/schedule-board/search">Find any job by RO, customer, vehicle, or VIN.</Card>
+  <Card title="Add a job" href="/schedule-board/add-a-job">Create a repair order.</Card>
+  <Card title="Assign a job" href="/schedule-board/assign-a-job">Drag a job onto a tech.</Card>
+  <Card title="Move or resize a job" href="/schedule-board/move-or-resize-a-job">Change a slot or length.</Card>
+  <Card title="Job details" href="/schedule-board/job-details">Read and edit a card.</Card>
+  <Card title="Job statuses" href="/schedule-board/job-statuses">The six job statuses.</Card>
+  <Card title="Unassigned jobs" href="/schedule-board/unassigned-jobs">Panel tags and filters.</Card>
+  <Card title="Promised time" href="/schedule-board/promised-time">Promise flags, overdue.</Card>
+  <Card title="Bulk day actions" href="/schedule-board/carry-forward-and-reset-day">Carry Forward, Reset Day.</Card>
+  <Card title="Search" href="/schedule-board/search">Find by RO or VIN.</Card>
 </CardGroup>
