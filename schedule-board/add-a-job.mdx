@@ -49,10 +49,10 @@ Required fields are marked with an asterisk.
 
 | Field | Notes |
 | --- | --- |
-| RO #* | Digits, or PENDING. Locked after the job is saved. |
+| RO #* | Digits, or PENDING. Editable after save unless the job is Completed. |
 | Job Type* | Alignment, Diagnostic, Inspection, LOF + Inspection, Pre-Purchase Inspection, Repair. |
 | First Name*, Last Name* | Last Name searches customers after 2 characters. |
-| Phone* | 10 to 15 digits. Locked after the job is saved. |
+| Phone* | 10 to 15 digits. Locked when you edit an existing job. |
 | Status* | Follows placement unless you change it. |
 
 ### Vehicle
@@ -87,6 +87,8 @@ Customers and vehicles are matched by phone and VIN. The drawer tells you what w
 ## Reusing an RO number
 
 If the RO # already has a job, a dialog asks "Link to this RO?". Linking reuses that customer, vehicle, and phone. The jobs stay separate, with their own tech, work, status, and promise time. Click **Link To This RO** to continue or **Change RO #** to go back. Some RO numbers cannot be reused. The drawer says "This RO # cannot be reused".
+
+You can change PENDING to digits later, unless the job is Completed. If those digits already belong to the same customer and vehicle, the job can join that ticket. A number that belongs to a different customer or vehicle cannot be reused.
 
 ## Common messages
 

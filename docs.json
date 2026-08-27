@@ -176,9 +176,10 @@
       {
         "group": "Support",
         "pages": [
+          "support/ask-bayboard",
           "support/contact-support",
-          "support/keyboard-shortcuts",
-          "support/system-status"
+          "support/system-status",
+          "support/keyboard-shortcuts"
         ]
       },
       {
