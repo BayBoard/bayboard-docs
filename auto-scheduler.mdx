@@ -1,11 +1,23 @@
 ---
 title: Auto-Scheduler
-description: Place Unassigned jobs into open technician time.
+description: Re-optimize the day from the board and Unassigned.
 ---
 
-Auto-Schedule places Unassigned jobs into open technician time on the day you are viewing. It never moves a job that is already on the board. Anything that does not fit stays in Unassigned.
+Every Auto-Schedule run reads the board and Unassigned.
 
-The feature is deterministic. The same Unassigned list always produces the same schedule, so a second run on the same list changes nothing.
+It re-optimizes that day using the shop's existing hard constraints.
+
+It also uses the shop's existing soft preferences.
+
+Assigned and In Progress jobs can slide.
+
+Time-off and no double-booking still hold.
+
+Anything that does not fit stays in Unassigned.
+
+The feature is deterministic. The same board, Unassigned, and settings always produce the same schedule.
+
+A second run on those same inputs changes nothing.
 
 The top-bar button reads **Auto Schedule**. You can also press S on the board.
 
@@ -36,6 +48,10 @@ Auto-Schedule checks hard constraints first. A job is placed only where every on
 - Fits before end of day. The block must end by that weekday's shop closing time.
 
 Jobs start on 30-minute marks inside shop hours.
+
+Assigned and In Progress can slide.
+
+Time-off and no double-booking still hold.
 
 Soft preferences then decide which open slot wins. In the default order they are: Honor promised-by, Waiting customers first, Prefer the tagged technician, Best-qualified tech, Balance the board, Match pace to job, Earliest open slot. An Owner / Admin or General Manager can reorder or turn off any of them in Settings > Scheduling.
 
