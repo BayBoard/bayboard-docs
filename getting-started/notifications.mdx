@@ -13,23 +13,44 @@ Alerts show under the bell icon in the top bar.
 
 ## In-app alerts
 
-Defaults depend on your role. Owner starts with Promised time approaching off, and with End-of-day wrap off.
+Owner / Admin starts with every visible toggle on. General Manager and Service Advisor start with every visible toggle on too. Rows your role cannot receive stay hidden, so those alerts never show in Settings or under the bell.
 
-The End-of-day wrap title in Settings includes the scope for your role: **Your day** for Technician, **The floor** for Foreman, **The shop** for Owner / Admin, General Manager, and Service Advisor.
+**Owner / Admin, General Manager, and Service Advisor**
 
-- **Promised time at risk.** Time left before the promise is under remaining hours plus 1 hour. Fixed rule, no guesswork. All roles.
-- **Promised time approaching.** 60 minutes remain before a promised time. Owner default is off. All roles.
-- **Waiting customer not started.** A waiting job has been on the board 15 minutes without a start. All roles except Technician.
-- **Jobs carried forward.** Carry Forward moved jobs onto a later shop day. All roles see this alert on the bell.
-- **End-of-day wrap.** After close: hours vs goal, jobs finished, and jobs carried over. All roles. Owner default is off.
-- **Same-day time-off bump.** A job was moved to Unassigned by time off added for today. All roles see this alert on the bell.
-- **Job assigned to you.** Someone else put a job on your column. This toggle also covers Auto-Schedule. Foreman and Technician only. Not shown for other roles.
+- **Promised in 1 hour.** A job is promised in 1 hour.
+- **Promised in 30 minutes.** A job is promised in 30 minutes.
+- **Waiting customer not started.** A waiting job has not started 15 minutes after its scheduled start. The Technician role never sees this alert row.
+- **Carry Forward.** Jobs scheduled and jobs moved to Unassigned.
+- **End of day.** Hours completed out of assigned hours, and jobs that carry over.
+- **Time off.** Time off scheduled and jobs bumped to Unassigned.
 
-Auto-Schedule uses a separate bell titled "Jobs scheduled for you". It is one summary for that run, such as "3 scheduled". It uses the same **Job assigned to you** Settings toggle. Assigning a job to yourself does not fire this alert for you.
+Job assigned to you is hidden for these roles.
+
+**Foreman**
+
+- **Waiting customer not started.** A waiting job has not started 15 minutes after its scheduled start. The Technician role never sees this alert row.
+- **End of day.** Hours completed out of assigned hours, and jobs that carry over.
+- **Time off.** Time off scheduled and jobs bumped to Unassigned.
+- **Job assigned to you.** Someone else put a job on your column, or Auto-Schedule placed work on your day.
+
+Foreman does not see Promised in 1 hour, Promised in 30 minutes, or Carry Forward.
+
+**Technician**
+
+- **End of day.** Hours completed out of assigned hours, and jobs that carry over.
+- **Job assigned to you.** Someone else put a job on your column, or Auto-Schedule placed work on your day.
+
+Every other row stays hidden for Technician.
+
+The Settings title is **End of day** for every role.
+
+Auto-Schedule uses a separate bell titled "Jobs scheduled for you" for that run. Each Auto-Schedule run sends one summary, such as "3 jobs were assigned to you on Wed, Aug 28". It uses the same **Job assigned to you** Settings toggle. Putting a job on your own column does not create a Job assigned to you alert.
 
 ## Send a test
 
-Click **Send A Test** to create one notification for yourself. It does not notify anyone else. You see "Test notification sent." and the alert appears under the bell.
+Click **Send A Test** to create one notification for yourself. Nobody else on staff is notified by that test.
+
+You see "Test notification sent." The test alert then appears under the bell.
 
 ## Related
 
