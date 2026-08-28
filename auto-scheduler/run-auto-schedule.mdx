@@ -1,18 +1,24 @@
 ---
 title: Run Auto-Schedule
-description: Place ready Unassigned jobs in one run.
+description: Re-optimize the day you are viewing.
 ---
 
 Owner / Admin, General Manager, and Service Advisor can run Auto-Schedule. The button is hidden for Foreman and Technician, and for everyone while billing is past due.
 
-## Which jobs are ready
+## Which jobs it reads
 
-Auto-Schedule only looks at the Unassigned panel, the list on the right side of the board. A job counts as ready when:
+Every run reads the board and the Unassigned panel, the list on the right side of the board.
+
+Assigned and In Progress jobs on that day can slide.
+
+Time-off and no double-booking still hold.
+
+An Unassigned job counts as ready when:
 
 - Its status is In Queue, or
 - Its status is Waiting on Parts, the parts ETA is today or earlier, and the slot is no earlier than the parts-ready hour (default 10:00 AM).
 
-Jobs already on the board are never moved. See [Job statuses](/schedule-board/job-statuses) for what each status means.
+See [Job statuses](/schedule-board/job-statuses) for what each status means.
 
 ## Run it
 
@@ -21,17 +27,17 @@ Jobs already on the board are never moved. See [Job statuses](/schedule-board/jo
     Use the date button or the day chevrons in the top bar. You cannot run Auto-Schedule on a past day. If you try, a toast reads "Past days are read-only."
   </Step>
   <Step title="Click Auto Schedule or press S">
-    The amber **Auto Schedule** button is in the top bar. If the Unassigned panel is empty, a toast reads "Nothing to auto-schedule. Unassigned is empty."
+    The amber **Auto Schedule** button is in the top bar. Empty Unassigned does not stop the run. The run still re-optimizes jobs that are already on the board.
   </Step>
   <Step title="Read the confirm dialog">
-    The dialog is titled "Run Auto-Schedule?" and reads: "For [Wed, Aug 12], BayBoard places Unassigned jobs into open capacity. It never moves a job already on the board. Anything that does not fit stays in Unassigned."
+    The dialog is titled "Run Auto-Schedule?" and reads: "For [Wed, Aug 12], BayBoard reads the board plus Unassigned and re-optimizes that day. Assigned and In Progress can slide. Time-off and no double-booking still hold. Anything that does not fit stays in Unassigned."
 
     <Frame>
       <img src="/images/auto-scheduler/run-auto-schedule-dialog.png" alt="The Run Auto-Schedule confirm dialog with Auto-Schedule and Cancel buttons" />
     </Frame>
   </Step>
   <Step title="Click Auto-Schedule">
-    A progress panel titled "Auto-Scheduler" shows "Reviewing [N] unassigned jobs…" and walks through five steps: Reading the day's capacity, Checking hard requirements, Weighing your scheduling priorities, Finding the best fit for each job, and Setting aside what will not fit.
+    A progress panel titled "Auto-Scheduler" reviews the board and Unassigned. It then walks through five steps: Reading the day's capacity, Checking hard requirements, Weighing your scheduling priorities, Finding the best fit for each job, and Setting aside what will not fit.
   </Step>
   <Step title="Read the result">
     A toast reports the outcome in one of three forms:
@@ -60,14 +66,14 @@ Service Advisors see "no open capacity" in place of "no qualified tech". The chi
 
 ## Undo a run
 
-The result toast has an **Undo** action. Undo moves the placed jobs back to Unassigned and reports one of:
+The result toast has an **Undo** action. Undo restores prior board placements. Jobs the run placed from Unassigned go back to Unassigned. Undo then reports one of:
 
 - "Undid [n] jobs"
 - "Undid [n] of [total] · [m] were changed since the run" when some placed jobs were edited or moved after the run
 - "Nothing to undo. Every job changed since the run."
 
 <Tip>
-Auto-Schedule is deterministic. If you undo and run again on the same list without changing anything, you get the same placements.
+Auto-Schedule is deterministic. If you undo and run again without changing the board, Unassigned, or settings, you get the same placements as before.
 </Tip>
 
 ## Related

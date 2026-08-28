@@ -22,7 +22,7 @@ Carry Forward sweeps every earlier day and moves uncompleted jobs onto the targe
     Click the arrow-right icon with the tooltip "Carry Forward Uncompleted Jobs", or press C on the board.
   </Step>
   <Step title="Read the confirmation">
-    The dialog is titled "Carry forward uncompleted jobs?" and reads: "Move every uncompleted job scheduled before [target date] onto [target date]. BayBoard places each job on the same Tech at the same time where possible. A taken slot pushes the job later in the day. Anything that does not fit moves to Unassigned. Jobs already in Unassigned are not touched."
+    The dialog is titled "Carry forward uncompleted jobs?" and reads: "Move every uncompleted job scheduled before [target date] onto [target date]. BayBoard places each leftover on the same tech, packed from shop open into the earliest gap. It never overlaps a job or time-off already there. Anything that does not fit moves to Unassigned. Jobs already in Unassigned are not touched."
   </Step>
   <Step title="Confirm">
     Click **Carry Forward**. The board jumps to the target day if anything was placed.
@@ -33,7 +33,9 @@ What moves: jobs with status Assigned, In Progress, or Waiting on Parts on any e
 
 What stays: Completed jobs, and jobs already in Unassigned.
 
-Each job tries the same technician at the same time. If that slot is taken, it moves later in the day. If nothing fits, the job goes to Unassigned with an amber banner that starts with "Bumped".
+Each leftover stays on the same technician. Carry Forward packs it from shop open into the earliest gap. That gap never overlaps a job or time-off already there.
+
+If nothing fits, the job goes to Unassigned with an amber banner that starts with "Bumped".
 
 The result toast reads "[n] scheduled · [m] bumped to Unassigned". One press handles up to 200 jobs. If more remain, the toast adds "more still to carry". Press C again.
 
