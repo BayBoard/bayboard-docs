@@ -99,6 +99,10 @@
         "pages": ["index"]
       },
       {
+        "group": "What's new",
+        "pages": ["changelog"]
+      },
+      {
         "group": "Getting started",
         "pages": [
           "getting-started",
@@ -183,10 +187,6 @@
           "support/system-status",
           "support/keyboard-shortcuts"
         ]
-      },
-      {
-        "group": "What's new",
-        "pages": ["changelog"]
       }
     ]
   }
