@@ -1,0 +1,18 @@
+{
+  "name": "BayBoard help (Mintlify)",
+  "user": "ubuntu",
+  "install": "npm config set prefix \"$HOME/.npm-global\" && npm install -g mint",
+  "terminals": [
+    {
+      "name": "mint dev",
+      "command": "export PATH=\"$HOME/.npm-global/bin:$PATH\" && mint dev",
+      "description": "Mintlify local preview server for the BayBoard help docs, served on port 3000."
+    }
+  ],
+  "ports": [
+    {
+      "name": "mint dev",
+      "port": 3000
+    }
+  ]
+}
