@@ -9,7 +9,6 @@ You can add a job if you are an Owner / Admin, General Manager, Service Advisor,
   <img src="/images/schedule-board/add-new-job-drawer.png" alt="Job Details drawer in add mode with the Schedule & Assignment, RO Details, and Vehicle sections" />
 </Frame>
 
-{/* TODO screenshot: recapture add-new-job-drawer.png so Last Name and Year show no required asterisk. First Name stays required. Make or Model stays required as a pair. See review/screenshot-handoff-issues-8-and-15.md. */}
 
 ## Steps
 
@@ -85,9 +84,9 @@ Customers and vehicles are matched by phone and VIN. The drawer tells you what w
 
 ## Reusing an RO number
 
-If the RO # already has a job, a dialog asks "Link to this RO?". The copy reads "This repair order already has a job. Linking reuses that customer, vehicle, and phone. The jobs stay separate. Different tech, work, status, and promise time." Click **Link To This RO** to continue or **Change RO #** to go back. Some RO numbers cannot be reused. The drawer title then reads "This RO # cannot be reused".
+If the RO # already has a job, a dialog asks "Link to this RO?". Linking reuses that customer, vehicle, and phone. The jobs stay separate, with their own tech, work, status, and promise time. Click **Link To This RO** to continue or **Change RO #** to go back. Some RO numbers cannot be reused. The drawer says "This RO # cannot be reused".
 
-After you link, those jobs share one repair-order ticket. Each linked card shows a chain icon beside the RO number. Matching digits alone are not a link and do not create that icon. A first job with that number stays a singleton until another job is linked to the same ticket.
+After you link, those jobs share one repair-order ticket. Each linked card shows a chain icon beside the RO number. Matching digits alone do not create that icon. A first job with that number has no chain until another job is linked to the same ticket.
 
 You can change PENDING to digits later, unless the job is Completed. If those digits already belong to the same customer and vehicle, the job can join that ticket. A number that belongs to a different customer or vehicle cannot be reused.
 
