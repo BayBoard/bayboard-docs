@@ -9,6 +9,7 @@ You can add a job if you are an Owner / Admin, General Manager, Service Advisor,
   <img src="/images/schedule-board/add-new-job-drawer.png" alt="Job Details drawer in add mode with the Schedule & Assignment, RO Details, and Vehicle sections" />
 </Frame>
 
+
 ## Steps
 
 <Steps>
@@ -16,10 +17,10 @@ You can add a job if you are an Owner / Admin, General Manager, Service Advisor,
     Click **Add New Job** at the bottom of the Unassigned panel, or press N. A drawer opens on the right titled "Job Details" with the subtitle "Add a new repair order to the board." Fill the fields on the form, then save the job.
   </Step>
   <Step title="Fill in RO Details">
-    Enter the RO #, Job Type, customer name, Phone, and Status. Typing two or more letters in Last Name searches existing customers already in the shop.
+    Enter the RO #, Job Type, First Name, Phone, and Status. Last Name is optional. Typing two or more letters in Last Name searches existing customers already in the shop.
   </Step>
   <Step title="Fill in Vehicle">
-    Enter the Year, plus Make or Model. Add the VIN and Key Tag if you have them. Write the Description of the work to be done.
+    Enter Make or Model. Year is optional. Add the VIN and Key Tag if you have them. Write the Description of the work to be done.
   </Step>
   <Step title="Set Schedule & Assignment">
     Pick a Technician and Tech Start Time to place the job on the board now. Leave either blank to send the job to Unassigned.
@@ -47,7 +48,8 @@ Required fields are marked with an asterisk.
 
 - **RO #\*** Digits, or PENDING. Editable after save unless that job's status is Completed.
 - **Job Type\*** Alignment, Diagnostic, Inspection, LOF + Inspection, Pre-Purchase Inspection, or Repair as the type.
-- **First Name\* and Last Name\*** Last Name searches customers after 2 characters.
+- **First Name\*** This field stays required.
+- **Last Name** Optional. A one-part name can go in First Name with Last Name left blank. Typing two or more letters here searches existing customers already in the shop.
 - **Phone\*** 10 to 15 digits. Locked when you edit an existing job.
 - **Status\*** Follows placement unless you change it.
 
@@ -55,8 +57,8 @@ Required fields are marked with an asterisk.
 
 | Field | Notes |
 | --- | --- |
-| Year* | Four digits. |
-| Make, Model | One of the two is required. |
+| Year | Optional. Leave it blank when the year is unknown. When you enter it, use four digits. |
+| Make, Model | One of the two is required. Neither field has its own asterisk. |
 | VIN | Up to 17 characters. |
 | Key Tag | For example A14. |
 | Description* | What the job is. |
@@ -84,6 +86,8 @@ Customers and vehicles are matched by phone and VIN. The drawer tells you what w
 
 If the RO # already has a job, a dialog asks "Link to this RO?". Linking reuses that customer, vehicle, and phone. The jobs stay separate, with their own tech, work, status, and promise time. Click **Link To This RO** to continue or **Change RO #** to go back. Some RO numbers cannot be reused. The drawer says "This RO # cannot be reused".
 
+After you link, those jobs share one repair-order ticket. Each linked card shows a chain icon beside the RO number. Matching digits alone do not create that icon. A first job with that number has no chain until another job is linked to the same ticket.
+
 You can change PENDING to digits later, unless the job is Completed. If those digits already belong to the same customer and vehicle, the job can join that ticket. A number that belongs to a different customer or vehicle cannot be reused.
 
 ## Common messages
@@ -96,6 +100,7 @@ The footer shows one message at a time. Fix it and save again.
 - **"Scheduled Time must use half-hour increments."** Use 0.5, 1.0, 1.5, and so on.
 - **"Phone must contain 10 to 15 digits."** Remove letters and check the digit count.
 - **"Vehicle make or model is required."** Fill in at least one.
+- **"Vehicle year is invalid."** Enter a four-digit year, or leave Year blank.
 - **"Promised By date and time must both be selected."** Set both fields, or clear both of those promise fields together.
 - **"The scheduled block must fit within the shop's open hours."** Pick an earlier start time, or a shorter block on the day.
 - **"Status must be Assigned when a Technician and Tech Start Time are selected."** Set Status to Assigned, or clear technician and start time.

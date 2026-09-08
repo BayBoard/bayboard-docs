@@ -5,17 +5,21 @@ description: Live view of the board, at-risk work, and stuck jobs.
 
 Today is the first lens in Reports. Owner / Admin, General Manager, Service Advisor, and Foreman can open it.
 
+<Frame>
+  <img src="/images/reports/reports-today.png" alt="Reports Today view with five live tiles, booked load by technician, promised work, stuck jobs, and unassigned work" />
+</Frame>
+
 Today is live. The subline reads "Live · as of [time]". Click **Refresh** to pull the latest numbers. The lens also refreshes on its own when you come back to the tab. There is no range picker on this lens.
 
 ## The five tiles
 
-Each tile has an info tooltip and a **View Jobs (n)** button.
+Each tile has an info tooltip and a **View Jobs (n)** button. Hover the info icon to see the same sentence in the app.
 
-- **Cars on the board** counts unique vehicle visits on today's board. Hint under the number: "[x]h booked today"
-- **At-risk promises** counts jobs promised today that are still open. Hint: "Nothing promised is late" when the tile is clear
-- **Stuck jobs** counts jobs with no status change for 24 hours. Hint: "Everything is moving" when the tile is clear
-- **Waiting on parts** counts jobs currently in Waiting on Parts. Hint: "[n] past their ETA" or "No past-due ETAs" under the number
-- **Not on the board** counts jobs waiting in Unassigned. Hint: "[x]h of work unplaced"
+- **Cars on the board** Cars scheduled on today's board, whatever their status. Hint under the number: "[x]h booked today"
+- **At-risk promises** Cars you promised for today that are not done yet. Hint: "Nothing promised is late" when the tile is clear
+- **Stuck jobs** Jobs that have not moved in a day or more. Hint: "Everything is moving" when the tile is clear
+- **Waiting on parts** Cars waiting on a part right now, always current rather than the selected range. Hint: "[n] past their ETA" or "No past-due ETAs" under the number
+- **Not on the board** Open jobs with no scheduled date, always current rather than the selected range. Hint: "[x]h of work unplaced"
 
 ## The four panels
 
