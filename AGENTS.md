@@ -20,6 +20,9 @@ validation, writing, and screenshot conventions.
 - A wording correction supported by the current app may be edited and checked.
 - Treat a new or changed feature claim as unverified until its current release
   status is confirmed.
+- Work on a branch and open a pull request. Never commit or push directly to
+  `main`. Stop at PR-ready unless the repository owner explicitly approves
+  merging or publishing; a delegated editing task is not that approval.
 - Use `mint validate` and `mint broken-links` for documentation changes.
   A pull request may provide a preview. Merging `main` publishes the help site
   and requires explicit authorization.
