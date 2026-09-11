@@ -20,7 +20,7 @@ You can add a job if you are an Owner / Admin, General Manager, Service Advisor,
     Enter the RO #, Job Type, First Name, Phone, and Status. Last Name is optional. Typing two or more letters in Last Name searches existing customers already in the shop.
   </Step>
   <Step title="Fill in Vehicle">
-    Enter Make or Model. Year is optional. Add the VIN and Key Tag if you have them. Write the Description of the work to be done.
+    Enter Year, Make, and Model when you know them. All three are optional. Add the VIN and Key Tag if you have them. Write the Description of the work to be done.
   </Step>
   <Step title="Set Schedule & Assignment">
     Pick a Technician and Tech Start Time to place the job on the board now. Leave either blank to send the job to Unassigned.
@@ -58,10 +58,14 @@ Required fields are marked with an asterisk.
 | Field | Notes |
 | --- | --- |
 | Year | Optional. Leave it blank when the year is unknown. When you enter it, use four digits. |
-| Make, Model | One of the two is required. Neither field has its own asterisk. |
+| Make, Model | Optional. Leave them blank when you do not know the vehicle yet. |
 | VIN | Up to 17 characters. |
 | Key Tag | For example A14. |
 | Description* | What the job is. |
+
+When Year, Make, and Model are all blank, the card shows **Vehicle not specified**.
+
+On a saved active numeric RO, you can correct Year, Make, or Model without changing the RO number. VIN stays locked. Completed jobs lock those vehicle fields.
 
 ## Default hours by job type
 
@@ -99,7 +103,6 @@ The footer shows one message at a time. Fix it and save again.
 - **"Est. Hours must be greater than zero."** Enter a value above 0.
 - **"Scheduled Time must use half-hour increments."** Use 0.5, 1.0, 1.5, and so on.
 - **"Phone must contain 10 to 15 digits."** Remove letters and check the digit count.
-- **"Vehicle make or model is required."** Fill in at least one.
 - **"Vehicle year is invalid."** Enter a four-digit year, or leave Year blank.
 - **"Promised By date and time must both be selected."** Set both fields, or clear both of those promise fields together.
 - **"The scheduled block must fit within the shop's open hours."** Pick an earlier start time, or a shorter block on the day.
