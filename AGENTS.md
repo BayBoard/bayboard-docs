@@ -4,6 +4,10 @@ This is a public Mintlify help site. Treat every change as customer-facing
 publication material. See [README.md](README.md) for the local preview,
 validation, writing, and screenshot conventions.
 
+This documentation supports a live service used by paying customers. Treat
+instructions that affect customer workflows as release-sensitive; do not
+publish speculative steps, unsafe recovery advice, or unverified behavior.
+
 ## Public-safe content
 
 - Do not add internal host paths, private identifiers, employee or customer
