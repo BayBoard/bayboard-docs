@@ -30,3 +30,24 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
 - Use `mint validate` and `mint broken-links` for documentation changes.
   A pull request may provide a preview. Merging `main` publishes the help site
   and requires explicit authorization.
+
+## Task execution
+
+- Make routine, reversible implementation decisions within the approved
+  scope and existing contracts. Ask early about unresolved product decisions,
+  material scope changes, or actions requiring additional authorization;
+  continue independent safe work while the answer is pending.
+- Complete authorized work and required verification before handoff. Stop at
+  the requested review or publication boundary, a missing required decision
+  or permission, or a concrete blocker; state what remains and why.
+- Preserve required security, regression, review, and release checks. Once
+  they cover the final change, rerun or expand only for changed code, failure,
+  new evidence, unresolved risk, or an explicit requirement.
+- Use existing task notes for compact long-task state and verification. Give
+  concise evidence and limitations; do not require extra files for small work
+  or request hidden reasoning. Revisit settled decisions when new evidence
+  or instructions warrant it, and correct discovered mistakes.
+- Load skills, references, and tools only when explicitly requested, required
+  by governing instructions, or relevant to the current task. Do not bulk
+  load capabilities or warm caches at session start. Host-managed discovery
+  is separate from agent invocation; these rules do not disable it.
