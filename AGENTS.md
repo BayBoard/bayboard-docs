@@ -44,7 +44,8 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
   manual review. These checks do not replace any required independent review.
   For security-relevant Docs changes, request manual review only through an
   approved private channel. If a public review reveals security details, do
-  not quote or reply with details; stop and alert Daniel for private handling.
+  not quote or reply with details; stop and alert the repository owner for
+  private handling.
 - For a configured repository scan, inspect the Security Findings dashboard
   separately. Record its last scanned ref and time; keep relevant dispositions
   private. Record "not configured" only when verified; if access is unavailable,
