@@ -20,6 +20,29 @@ Owner / Admin and General Manager manage accounts in Settings > Users. Click a p
 
 Below the fields, a Linked roster tech card shows the technician column this account is connected to. Click it to open that technician in Team. If it reads "Not linked", the card explains "This person sees the setup-incomplete state until a roster tech is linked."
 
+## Link a roster technician
+
+After a Foreman or Technician accepts an invite, an Owner / Admin or General Manager can connect that active, unlinked account to a roster column. An existing link cannot be replaced or cleared.
+
+<Steps>
+  <Step title="Open the member">
+    In Settings > Users, click the accepted, active Foreman or Technician who is not linked.
+  </Step>
+  <Step title="Choose a roster tech">
+    The LINK TO ROSTER TECH field lists "Choose roster tech" and every active roster technician that is not already linked to an account. The note reads: "Choose the schedule column this person works from. Existing roster links cannot be changed here."
+  </Step>
+  <Step title="Click Link Tech">
+    Click **Link Tech**.
+  </Step>
+  <Step title="Confirm">
+    The dialog is titled "Link [name] to [technician]?" and reads: "[name] will use [technician]'s schedule column. This can only link an unlinked account." Click **Link Roster Tech**.
+  </Step>
+</Steps>
+
+On success you see "[name] was linked to [technician]." The picker is replaced by the linked technician name.
+
+If no roster technician is free, the card reads "No active unlinked roster techs are available." If another account claimed that technician first, the account stays unlinked. Refresh the page and choose again.
+
 ## Change a role
 
 <Steps>
@@ -61,4 +84,5 @@ Open the member and click **Reactivate Account**. The dialog asks "Reactivate [n
 
 - [Invite a user](/users-and-access/invite-a-user)
 - [Users and access](/users-and-access)
+- [Add a technician](/team-and-roles/add-a-technician)
 - [Archive or restore a technician](/team-and-roles/archive-a-technician)
