@@ -11,10 +11,12 @@ Both actions are icon buttons in the top bar next to **Auto Schedule**. Only Own
 
 ## Carry Forward
 
-Carry Forward sweeps every earlier day and moves uncompleted jobs onto the target day. The target is today if the shop is open, otherwise the next open day.
+Carry Forward sweeps every earlier day and moves uncompleted jobs onto the day you are viewing. Go to the day you want leftovers to land on first. That day must be today or the next open workday.
+
+If you are on a past day, you see "Carry Forward cannot target a past day." If the day is closed, you see "Choose an open day for Carry Forward." If the day is later than the next open workday, you see "Choose today or the next open workday for Carry Forward."
 
 <Frame>
-  <img src="/images/schedule-board/carry-forward-dialog.png" alt="The Carry forward uncompleted jobs confirmation dialog with Cancel and Carry Forward buttons" />
+  <img src="/images/schedule-board/carry-forward-dialog.png" alt="The Carry unfinished jobs confirmation dialog on the viewed board day, with Cancel and Carry Forward buttons" />
 </Frame>
 
 <Steps>
@@ -22,24 +24,32 @@ Carry Forward sweeps every earlier day and moves uncompleted jobs onto the targe
     Click the arrow-right icon with the tooltip "Carry Forward Uncompleted Jobs", or press C on the board.
   </Step>
   <Step title="Read the confirmation">
-    The dialog is titled "Carry forward uncompleted jobs?" and reads: "Move every uncompleted job scheduled before [target date] onto [target date]. BayBoard places each leftover on the same tech, packed from shop open into the earliest gap. It never overlaps a job or time-off already there. Anything that does not fit moves to Unassigned. Jobs already in Unassigned are not touched."
+    The dialog is titled "Carry unfinished jobs to [date]?" and reads: "Moves unfinished jobs from earlier days. Jobs that don't fit go to Unassigned."
   </Step>
   <Step title="Confirm">
-    Click **Carry Forward**. The board jumps to the target day if anything was placed.
+    Click **Carry Forward**.
   </Step>
 </Steps>
 
 What moves: jobs with status Assigned, In Progress, or Waiting on Parts on any earlier day.
 
-What stays: Completed jobs, and jobs already in Unassigned.
+What stays: Completed jobs, jobs already on the day you are viewing, and jobs already in Unassigned.
 
 Each leftover stays on the same technician. Carry Forward packs it from shop open into the earliest gap. That gap never overlaps a job or time-off already there.
 
 If nothing fits, the job goes to Unassigned with an amber banner that starts with "Bumped".
 
-The result toast reads "[n] scheduled · [m] bumped to Unassigned". One press handles up to 200 jobs. If more remain, the toast adds "more still to carry". Press C again.
+The result toast reads "[n] scheduled · [m] bumped to Unassigned". If nothing was eligible, it reads "No unfinished jobs scheduled before [date] to carry forward." One press handles up to 200 jobs. If more remain, the toast adds "more still to carry". Press C again.
 
-Carry Forward has no Undo. To put a job back, drag it to its old slot or run Auto-Schedule.
+## Undo Carry Forward
+
+When at least one job moved, the result toast has an **Undo** action for about 30 seconds.
+
+<Frame>
+  <img src="/images/schedule-board/carry-forward-undo.png" alt="The Carry Forward result toast showing jobs scheduled and bumped, with an Undo action" />
+</Frame>
+
+Click **Undo** to put those jobs back. BayBoard checks the current board first. Jobs that were moved or edited after the sweep stay as they are. The toast then reads "[n] restored · [m] changed or blocked".
 
 ## Reset Day
 
