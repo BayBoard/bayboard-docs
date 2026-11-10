@@ -14,7 +14,7 @@ Job Details is the window that opens when you click a job card, or press Enter o
 The header reads "Repair Order #10234" with the job type, the vehicle, and the customer. Below it:
 
 - **Technician** No. The hint reads "Drag on the board to reassign".
-- **Est. Hours** Yes. Commits when you click away. When you change the estimate, enter more than 0 and no more than 100 hours, with up to two decimal places. The scheduled span shows under it, such as "9:00 AM to 11:00 AM", or else "Not scheduled" under that same field.
+- **Est. Hours** Yes. Commits when you click away. When you change the estimate, enter more than 0 and no more than 100 hours, with up to two decimal places. A value outside those limits shows a message under the field and is not saved. The scheduled span shows under it, such as "9:00 AM to 11:00 AM", or else "Not scheduled" under that same field.
 - **Key Tag** Yes.
 - **Waiting** Yes. Toggle **Yes** or **No**.
 - **Promised By** No. Shows the promise or "None set".
@@ -39,13 +39,13 @@ There is no delete. Archive is the only way to remove a job, and it is reversibl
 
 ## When inline editing is unavailable
 
-Est. Hours, Key Tag, Waiting, and Status become read-only when any of these apply:
+Est. Hours, Key Tag, and Waiting become read-only when any of these apply:
 
 - Your role is Technician.
 - The job is Completed or Archived.
 - The job is scheduled on a different day than the one on screen.
 
-Unassigned jobs can always be edited inline by an editing role.
+Unassigned jobs can be edited inline by an editing role. Status buttons remain available for Completed, Archived, and other-day jobs so an editing role can revert a completion or restore an archived job. Billing and connection restrictions still apply to all changes.
 
 ## Related
 
