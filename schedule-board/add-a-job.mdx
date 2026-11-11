@@ -37,7 +37,7 @@ Required fields are marked with an asterisk.
 ### Schedule & Assignment
 
 - **Technician\*** First option is "Unassigned".
-- **Est. Hours\*** Filled from the job type until you edit it.
+- **Est. Hours\*** Filled from the job type until you edit it. Enter more than 0 and no more than 100 hours, with up to two decimal places (for example, 1.25). On an existing job, an estimate you do not change is kept as it is.
 - **Tech Start Time** 30-minute slots, or "None".
 - **Scheduled Time** Block length in hours, not clock time, in half-hour steps on the grid.
 - **Promised By Date and Time** Set both fields, or leave both empty.
@@ -101,6 +101,9 @@ The footer shows one message at a time. Fix it and save again.
 - **"RO # must contain digits or PENDING."** Use numbers only, or type the word PENDING in that same RO field.
 - **"Add the RO number before marking this job Completed."** Type a numeric RO # first, then set Status to Completed.
 - **"Est. Hours must be greater than zero."** Enter a value above 0.
+- **"Est. Hours must use at most 2 decimal places."** Use a value like 1.25.
+- **"Est. Hours is not a valid number."** Type plain digits with an optional decimal point.
+- **"Est. Hours must be 100 or less."** Enter 100 or lower.
 - **"Scheduled Time must use half-hour increments."** Use 0.5, 1.0, 1.5, and so on.
 - **"Phone must contain 10 to 15 digits."** Remove letters and check the digit count.
 - **"Vehicle year is invalid."** Enter a four-digit year, or leave Year blank.

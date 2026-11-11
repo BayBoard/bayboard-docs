@@ -11,17 +11,21 @@ Job Details is the window that opens when you click a job card, or press Enter o
 
 ## What it shows
 
-The header reads "Repair Order #10234" with the job type, the vehicle, and the customer. Below it:
+The header shows the repair order number with the job type, the vehicle, and the customer. Below it:
 
 - **Technician** No. The hint reads "Drag on the board to reassign".
-- **Est. Hours** Yes. Commits when you click away. The scheduled span shows under it, such as "9:00 AM to 11:00 AM", or else "Not scheduled" under that same field.
+- **Est. Hours** Yes. Commits when you click away. When you change the estimate, enter more than 0 and no more than 100 hours, with up to two decimal places. A value outside those limits shows a message under the field and is not saved. The scheduled span shows under it, such as "9:00 AM to 11:00 AM", or else "Not scheduled" under that same field.
 - **Key Tag** Yes.
 - **Waiting** Yes. Toggle **Yes** or **No**.
 - **Promised By** No. Shows the promise or "None set".
 - **Description** No.
 - **Status** Yes. Six buttons, one per status.
 
-Edits commit right away. There is no save button in this window.
+<Frame>
+  <img src="/images/schedule-board/estimated-hours-error.png" alt="Job Details showing an estimate of 101 hours rejected with the message Est. Hours must be 100 or less" />
+</Frame>
+
+Valid edits commit right away. There is no save button in this window.
 
 ## Change the rest with Edit Job
 
@@ -39,13 +43,13 @@ There is no delete. Archive is the only way to remove a job, and it is reversibl
 
 ## When inline editing is unavailable
 
-Est. Hours, Key Tag, Waiting, and Status become read-only when any of these apply:
+Est. Hours, Key Tag, and Waiting become read-only when any of these apply:
 
 - Your role is Technician.
 - The job is Completed or Archived.
 - The job is scheduled on a different day than the one on screen.
 
-Unassigned jobs can always be edited inline by an editing role.
+Unassigned jobs can be edited inline by an editing role. An editing role can change status on Completed, Archived, and other-day jobs to revert a completion or restore an archived job. To archive a job scheduled for another day, first open that day on the board. Billing and connection restrictions still apply to all changes.
 
 ## Related
 

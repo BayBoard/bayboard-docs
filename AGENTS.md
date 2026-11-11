@@ -1,7 +1,7 @@
 # BayBoard help documentation
 
 This is a public Mintlify help site. Treat every change as customer-facing
-publication material. See [README.md](README.md) for the local preview,
+publication material. See [README.md](https://github.com/BayBoard/bayboard-docs/blob/main/README.md) for the local preview,
 validation, writing, and screenshot conventions.
 
 This documentation supports a live service used by paying customers. Treat
