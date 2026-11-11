@@ -11,7 +11,7 @@ Job Details is the window that opens when you click a job card, or press Enter o
 
 ## What it shows
 
-The header reads "Repair Order #10234" with the job type, the vehicle, and the customer. Below it:
+The header shows the repair order number with the job type, the vehicle, and the customer. Below it:
 
 - **Technician** No. The hint reads "Drag on the board to reassign".
 - **Est. Hours** Yes. Commits when you click away. When you change the estimate, enter more than 0 and no more than 100 hours, with up to two decimal places. A value outside those limits shows a message under the field and is not saved. The scheduled span shows under it, such as "9:00 AM to 11:00 AM", or else "Not scheduled" under that same field.
@@ -21,7 +21,11 @@ The header reads "Repair Order #10234" with the job type, the vehicle, and the c
 - **Description** No.
 - **Status** Yes. Six buttons, one per status.
 
-Edits commit right away. There is no save button in this window.
+<Frame>
+  <img src="/images/schedule-board/estimated-hours-error.png" alt="Job Details showing an estimate of 101 hours rejected with the message Est. Hours must be 100 or less" />
+</Frame>
+
+Valid edits commit right away. There is no save button in this window.
 
 ## Change the rest with Edit Job
 
