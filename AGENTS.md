@@ -36,16 +36,16 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
 - Keep security finding details, affected identifiers, and dispositions in an
   approved private record. Never put them in public files, PRs, issues, commit
   messages, or fix descriptions; put only a sanitized status in the public PR.
-- Automatic Codex Code Review and its Security Report are configured on PR
-  open. Verify completion and inspect the PR comments and report, recording
-  the reviewed head SHA and check time publicly, with finding details and
+- Automatic Codex Code Review is configured on PR open; automatic Security
+  Review is off. Verify completion and inspect the PR comments, recording the
+  reviewed head SHA and check time publicly, with security finding details and
   dispositions in the private record. A PR-open run does not cover later
   commits by itself; after consequential final changes, request and inspect a
-  manual review. These checks do not replace any required independent review.
-  For security-relevant Docs changes, request manual review only through an
-  approved private channel. If a public review reveals security details, do
-  not quote or reply with details; stop and alert the repository owner for
-  private handling.
+  manual Code Review. For security-relevant Docs changes, request a targeted
+  manual Security Review only through an approved private channel. These
+  checks do not replace any required independent review. If a public review
+  reveals security details, do not quote or reply with details; stop and alert
+  the repository owner for private handling.
 - For a configured repository scan, inspect the Security Findings dashboard
   separately. Record its last scanned ref and time; keep relevant dispositions
   private. Record "not configured" only when verified; if access is unavailable,
@@ -75,3 +75,11 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
   by governing instructions, or relevant to the current task. Do not bulk
   load capabilities or warm caches at session start. Host-managed discovery
   is separate from agent invocation; these rules do not disable it.
+
+## Security review context
+
+For Code Review, use [SECURITY.md](SECURITY.md) as a threat map. Check
+customer-facing instructions against an approved current app source, inspect
+screenshots for private data, and verify changed outbound destinations. Treat
+model scenarios as hypotheses and keep security finding details in the approved
+private record above.
