@@ -36,16 +36,21 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
 - Keep security finding details, affected identifiers, and dispositions in an
   approved private record. Never put them in public files, PRs, issues, commit
   messages, or fix descriptions; put only a sanitized status in the public PR.
-- Automatic Codex Code Review is configured on PR open; automatic Security
-  Review is off. Verify completion and inspect the PR comments, recording the
-  reviewed head SHA and check time publicly, with security finding details and
-  dispositions in the private record. A PR-open run does not cover later
-  commits by itself; after consequential final changes, request and inspect a
-  manual Code Review. For security-relevant Docs changes, request a targeted
-  manual Security Review only through an approved private channel. These
-  checks do not replace any required independent review. If a public review
-  reveals security details, do not quote or reply with details; stop and alert
-  the repository owner for private handling.
+- The standard toolkit is required CI, one cross-family adversarial review
+  per PR, Bugbot when usage is available, and Daybreak security checks
+  appropriate to the change. General Codex GitHub Code Review is not required.
+  Record and skip Bugbot when its usage quota is exhausted; do not describe
+  that skip as a clean review. Diagnose other failures and triage findings.
+- After consequential fixes, obtain a targeted confirming adversarial review
+  of the corrections and their interactions. Do not repeat full reviews or
+  repository scans for every small edit without a reason.
+- Keep security-relevant Docs review in an approved private channel. Daybreak
+  PR security review and default-branch monitoring are separate: an unmerged
+  PR needs coverage of its own diff. Run broader scans at meaningful
+  integration/release points. Record exact reviewed SHA and scope; pending,
+  unavailable, failed, or skipped checks are not clean results. If a public
+  review exposes security details, do not repeat them; alert the repository
+  owner for private handling. Required security coverage remains a gate.
 - For a configured repository scan, inspect the Security Findings dashboard
   separately. Record its last scanned ref and time; keep relevant dispositions
   private. Record "not configured" only when verified; if access is unavailable,
@@ -54,6 +59,18 @@ publish speculative steps, unsafe recovery advice, or unverified behavior.
   an owner in an approved private tracker or record without blocking every PR.
 - Resolve in-scope actionable findings before PR-ready. If required review
   evidence is unavailable, report **not ready** and the exact blocker.
+
+## Automatic review configuration
+
+The approved initial Docs configuration leaves automatic general Code Review,
+automatic PR security review, continuous monitoring, and scheduled scans off.
+Keep required CI and independent cross-family adversarial review, with Bugbot
+when usage is available. Request focused private security checks when a change
+affects executable code, deployment configuration, or security-sensitive content.
+Required security coverage must address the final relevant diff before merge.
+This proportional configuration does not waive security checks or publication
+approval. Record actual settings and evidence separately from this intended
+policy. Do not publish private security details through review comments.
 
 ## Task execution
 
